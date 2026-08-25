@@ -1,0 +1,14 @@
+.snowflake/
+
+# Environment variables
+.env*.local
+
+# Common ignores
+node_modules
+out
+www
+.next/
+.DS_Store
+.claude
+.agents
+.firebase

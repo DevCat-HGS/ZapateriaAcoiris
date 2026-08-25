@@ -1,0 +1,84 @@
+import { SiteHeader } from "@/components/site-header"
+import { Hero } from "@/components/hero"
+import { Services } from "@/components/services"
+import { BeforeAfter } from "@/components/before-after"
+import { Experience } from "@/components/experience"
+import { WhyChoose } from "@/components/why-choose"
+import { Process } from "@/components/process"
+import { PickupDelivery } from "@/components/pickup-delivery"
+import { Gallery } from "@/components/gallery"
+import { LocationsHours } from "@/components/locations-hours"
+import { FinalCta } from "@/components/final-cta"
+import { SiteFooter } from "@/components/site-footer"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { business, locations, schedule, services } from "@/lib/site"
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcoiriszapateria.com"
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ShoeStore",
+  "@id": `${siteUrl}/#business`,
+  name: business.name,
+  url: siteUrl,
+  image: `${siteUrl}/images/hero.png`,
+  logo: `${siteUrl}/logo-empresa.png`,
+  description:
+    "Reparación y restauración de calzado, bolsos, ropa y artículos de cuero en Medellín.",
+  telephone: "+57 311 630 1609",
+  priceRange: "$$",
+  currenciesAccepted: "COP",
+  areaServed: ["Medellín", "Valle de Aburrá"],
+  sameAs: [business.instagram.url, business.facebook.url],
+  openingHoursSpecification: schedule.map((item) => ({
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: item.days === "Sábados" ? "Saturday" : ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: item.days === "Sábados" ? "09:00" : "08:30",
+    closes: item.days === "Sábados" ? "14:00" : "17:30",
+  })),
+  makesOffer: services.map((service) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: `${service.title} - reparación y restauración`,
+      areaServed: "Medellín, Colombia",
+    },
+  })),
+  location: locations.map((location) => ({
+    "@type": "ShoeStore",
+    name: location.name,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: location.address,
+      addressLocality: "Medellín",
+      addressCountry: "CO",
+    },
+    telephone: location.phone,
+  })),
+}
+
+export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Services />
+        <BeforeAfter />
+        <Experience />
+        <WhyChoose />
+        <Process />
+        <PickupDelivery />
+        <Gallery />
+        <LocationsHours />
+        <FinalCta />
+      </main>
+      <SiteFooter />
+      <WhatsAppFloat />
+    </>
+  )
+}
