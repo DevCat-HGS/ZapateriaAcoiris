@@ -24,7 +24,7 @@ const localBusinessSchema = {
   image: `${siteUrl}/images/hero.png`,
   logo: `${siteUrl}/logo-empresa.png`,
   description:
-    "Reparación y restauración de calzado, bolsos, ropa y artículos de cuero en Medellín.",
+    "Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero en Medellín. Cambio de suelas, teñido, costuras y más.",
   telephone: "+57 311 630 1609",
   priceRange: "$$",
   currenciesAccepted: "COP",

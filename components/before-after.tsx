@@ -14,7 +14,7 @@ export function BeforeAfter() {
         <SectionHeading
           eyebrow="Antes y Después"
           title="Mira la diferencia."
-          description="Cada reparación cuenta una historia. Descubre cómo podemos devolverle vida a tus artículos. Arrastra la barra para comparar."
+          description="Cada reparación cuenta una historia. Descubre cómo podemos devolverle vida a tus artículos. Observa cómo el Antes se transforma automáticamente en Después."
         />
 
         <div className="mt-14 flex flex-col gap-14">

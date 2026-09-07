@@ -4,7 +4,7 @@ export const business = {
   name: "Arcoiris Zapatería Especializada",
   shortName: "Arcoiris",
   slogan: "Damos nueva vida a tus favoritos.",
-  experienceYears: "Más de 10 años",
+  experienceYears: "40 años de experiencia",
   coverage: "Área Metropolitana de Medellín / Valle de Aburrá",
   instagram: {
     handle: "@arcoiris_zapateria",
@@ -39,39 +39,41 @@ export const services: Service[] = [
     slug: "calzado",
     title: "Calzado",
     description:
-      "Reparación, mantenimiento y restauración de diferentes tipos de calzado.",
+      "Reparación de zapatos y tenis deportivos, mantenimiento y restauración de diferentes tipos de calzado.",
     image: "/images/service-calzado.png",
     context: "calzado",
   },
   {
     slug: "bolsos",
     title: "Bolsos",
-    description: "Reparación y restauración de bolsos y accesorios.",
+    description:
+      "Costura de bolsos, cambio de asas, cierres y herrajes, además de restauración y cuidado de tus accesorios.",
     image: "/images/service-bolsos.png",
     context: "bolsos",
   },
   {
-    slug: "cuero",
-    title: "Cuero",
+    slug: "tenido-cuero",
+    title: "Teñido de cuero",
     description:
-      "Tratamiento, reparación y restauración de artículos elaborados en cuero.",
+      "Teñido industrial de toda clase de artículos de cuero, con acabados pensados para renovar su color y apariencia.",
     image: "/images/service-cuero.png",
     context: "cuero",
   },
   {
-    slug: "ropa",
-    title: "Ropa",
-    description: "Reparaciones y ajustes en prendas y artículos textiles.",
-    image: "/images/service-ropa.png",
-    context: "ropa",
+    slug: "lavanderia-calzado",
+    title: "Lavandería de calzado",
+    description:
+      "Lavandería especializada de calzado para limpiar y recuperar tus zapatos y tenis con el cuidado adecuado.",
+    image: "/images/service-calzado.png",
+    context: "calzado",
   },
   {
-    slug: "otros",
-    title: "Otros materiales",
+    slug: "ropa",
+    title: "Prendas y textiles",
     description:
-      "También trabajamos artículos elaborados en materiales sintéticos y otros materiales.",
-    image: "/images/service-otros.png",
-    context: "otros",
+      "Teñido de jeans y prendas de algodón, además de lencería como sábanas, fundas de almohadas y toallas.",
+    image: "/images/service-ropa.png",
+    context: "ropa",
   },
 ]
 
@@ -215,7 +217,7 @@ export const processSteps = [
 
 export const benefits = [
   {
-    title: "Más de 10 años de experiencia",
+    title: "40 años de experiencia",
     description:
       "Experiencia en reparación y restauración de diferentes artículos.",
     icon: "Award",
@@ -226,8 +228,9 @@ export const benefits = [
     icon: "HeartHandshake",
   },
   {
-    title: "Especialistas en cuero",
-    description: "Experiencia trabajando con productos elaborados en cuero.",
+    title: "Reparación y cuidado del cuero",
+    description:
+      "Especialistas en reparación de artículos de cuero, teñido industrial de toda clase de artículos de cuero y venta de artículos para su renovación y cuidado.",
     icon: "Layers",
   },
   {

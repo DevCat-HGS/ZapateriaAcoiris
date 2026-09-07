@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     'Arcoiris Zapatería Especializada | Reparación de Calzado y Cuero en Medellín',
   description:
-    'Especialistas en reparación y restauración de calzado, bolsos, ropa y artículos de cuero en Medellín. Más de 10 años de experiencia. Recogida y entrega en el Área Metropolitana.',
+    'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero en Medellín. Cambio de suelas, teñido, costuras y más, con 40 años de experiencia y recogida y entrega en el Área Metropolitana.',
   keywords: [
     'reparación de calzado Medellín',
     'reparación de zapatos Medellín',
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     'zapatería especializada Medellín',
     'reparación de calzado Laureles',
     'reparación de calzado El Poblado',
+    'cambio de suelas Medellín',
+    'teñido de cuero Medellín',
+    'reparación de chaquetas de cuero Medellín',
   ],
   authors: [{ name: 'Arcoiris Zapatería Especializada' }],
   creator: 'Arcoiris Zapatería Especializada',
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     title:
       'Arcoiris Zapatería Especializada | Reparación de Calzado y Cuero en Medellín',
     description:
-      'Reparamos y restauramos calzado, bolsos, ropa y artículos de cuero. Más de 10 años de experiencia. Recogida y entrega en el Área Metropolitana de Medellín.',
+      'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero. Cambio de suelas, teñido, costuras y más en Medellín, con recogida y entrega en el Área Metropolitana.',
     siteName: 'Arcoiris Zapatería Especializada',
     images: [{ url: '/images/hero.png', width: 1200, height: 630, alt: 'Restauración de calzado en cuero' }],
   },
@@ -64,12 +67,13 @@ export const metadata: Metadata = {
     title:
       'Arcoiris Zapatería Especializada | Reparación de Calzado en Medellín',
     description:
-      'Reparación y restauración de calzado, bolsos y artículos de cuero en Medellín.',
+      'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero. Cambio de suelas, teñido, costuras y más en Medellín.',
     images: ['/images/hero.png'],
   },
   icons: {
-    icon: '/logo-empresa.png',
-    apple: '/logo-empresa.png',
+    icon: [{ url: '/icon.png', rel: 'icon', type: 'image/png' }],
+    shortcut: ['/icon.png'],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
 }
 

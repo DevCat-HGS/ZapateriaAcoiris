@@ -7,7 +7,7 @@ export function Experience() {
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Experiencia"
-          title="Más de 10 años devolviendo vida a tus artículos."
+          title="40 años devolviendo vida a tus artículos."
           description="En Arcoiris Zapatería Especializada combinamos experiencia, cuidado y atención personalizada para ayudarte a recuperar tus artículos y prolongar su vida útil."
           inverted
         />

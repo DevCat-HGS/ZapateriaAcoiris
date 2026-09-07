@@ -50,17 +50,15 @@ export function Services() {
               </div>
             </Reveal>
           ))}
-
-          {/* Tarjeta CTA final */}
           <Reveal
             delay={services.length * 80}
             className="flex flex-col justify-center rounded-2xl border border-dashed border-accent/50 bg-accent/10 p-6 text-center"
           >
             <p className="text-pretty font-serif text-lg font-semibold text-primary">
-              ¿Tu artículo no aparece en la lista?
+              ¿Quieres saber más?
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Escríbenos por WhatsApp y cuéntanos qué necesitas reparar.
+              Escríbenos por WhatsApp y te contamos cómo podemos ayudarte.
             </p>
             <a
               href={whatsappLink("general")}

@@ -10,7 +10,6 @@ export function Hero() {
       className="relative overflow-hidden bg-gradient-to-b from-secondary/60 via-background to-background pt-28 pb-16 sm:pt-32 lg:pt-36 lg:pb-24"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:px-8">
-        {/* Texto */}
         <div className="flex flex-col">
           <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-accent-foreground">
             <Sparkles className="size-3.5" />
@@ -18,13 +17,13 @@ export function Hero() {
           </span>
 
           <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-primary sm:text-5xl lg:text-6xl">
-            Damos nueva vida a tus{" "}
-            <span className="text-accent">favoritos.</span>
+            Damos nueva vida a tus <span className="text-accent">favoritos.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            Reparamos y restauramos calzado, bolsos, ropa y artículos de cuero y
-            otros materiales, con más de 10 años de experiencia artesanal.
+            Reparamos y restauramos calzado, bolsos, prendas y artículos de cuero.
+            También ofrecemos teñido de ropa y lavandería especializada de calzado,
+            respaldados por 40 años de experiencia.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -43,7 +42,7 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="size-4 text-accent" />
-              Especialistas en cuero
+              Reparación y cuidado del cuero
             </span>
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="size-4 text-accent" />
@@ -52,7 +51,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Imagen */}
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border/60 shadow-xl shadow-primary/10 sm:aspect-square lg:aspect-[4/5]">
             <Image
@@ -64,13 +62,10 @@ export function Hero() {
               className="object-cover"
             />
           </div>
-          {/* Tarjeta flotante */}
           <div className="absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl border border-border/60 bg-card/95 px-5 py-4 shadow-lg backdrop-blur-sm sm:left-6">
-            <span className="font-serif text-3xl font-semibold text-primary">
-              +10
-            </span>
+            <span className="font-serif text-3xl font-semibold text-primary">40</span>
             <span className="text-sm font-medium leading-tight text-muted-foreground">
-              años devolviendo
+              años transformando
               <br />
               vida a tus artículos
             </span>

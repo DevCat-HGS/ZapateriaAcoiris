@@ -191,6 +191,72 @@
   transform: translateY(0);
 }
 
+@keyframes before-after-reveal {
+  0%,
+  14% {
+    clip-path: inset(0 100% 0 0);
+  }
+  43%,
+  57% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+.before-after-reveal {
+  animation: before-after-reveal 8.4s ease-in-out infinite;
+}
+
+@keyframes before-after-before {
+  0%,
+  14% {
+    clip-path: inset(0 0 0 0);
+  }
+  43%,
+  57% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.before-after-before {
+  animation: before-after-before 8.4s ease-in-out infinite;
+}
+
+@keyframes before-after-line {
+  0%,
+  14% {
+    left: 0%;
+  }
+  43%,
+  57% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.before-after-line {
+  animation: before-after-line 8.4s ease-in-out infinite;
+}
+
+.before-after-reset {
+  clip-path: inset(0 100% 0 0);
+}
+
+.before-after-before-reset {
+  clip-path: inset(0 0 0 0);
+}
+
+.before-after-line-reset {
+  left: 0%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -199,5 +265,17 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .before-after-reveal {
+    animation: none;
+    clip-path: inset(0 0 0 0);
+  }
+  .before-after-before {
+    animation: none;
+    clip-path: inset(0 0 0 100%);
+  }
+  .before-after-line {
+    animation: none;
+    left: 100%;
   }
 }
