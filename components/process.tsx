@@ -13,15 +13,16 @@ export function Process() {
           description="Un proceso simple y directo, pensado para que resolver tu caso sea fácil desde el primer mensaje."
         />
 
-        <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step, i) => (
             <Reveal
               key={step.number}
               as="li"
+              variant="zoom"
               delay={i * 80}
-              className="relative flex flex-col gap-3 rounded-2xl border border-border/70 bg-card p-6"
+              className="group relative flex flex-col gap-3 rounded-2xl border border-border/70 bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
             >
-              <span className="font-serif text-3xl font-semibold text-accent">
+              <span className="font-serif text-3xl font-semibold text-accent transition-transform duration-300 group-hover:scale-110">
                 {step.number}
               </span>
               <h3 className="font-serif text-lg font-semibold text-primary">

@@ -21,6 +21,7 @@ export function BeforeAfter() {
           {beforeAfterCases.map((item, i) => (
             <Reveal
               key={item.id}
+              variant={i % 2 === 1 ? "right" : "left"}
               className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12"
             >
               <div className={i % 2 === 1 ? "lg:order-2" : ""}>

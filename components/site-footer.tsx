@@ -1,5 +1,5 @@
 import { MapPin, Phone } from "lucide-react"
-import { business, locations, navLinks, schedule } from "@/lib/site"
+import { business, footerExtraLinks, locations, navLinks, schedule } from "@/lib/site"
 import { WHATSAPP_DISPLAY, whatsappLink } from "@/lib/whatsapp"
 import { Logo } from "./logo"
 import { InstagramIcon, FacebookIcon } from "./social-icons"
@@ -46,6 +46,16 @@ export function SiteFooter() {
             </h3>
             <ul className="mt-4 space-y-2.5">
               {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              {footerExtraLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
@@ -120,7 +130,19 @@ export function SiteFooter() {
               href="/privacy"
               className="text-primary-foreground/80 transition-colors hover:text-accent"
             >
-              Privacy
+              Privacidad
+            </a>
+            <a
+              href="/garantia"
+              className="text-primary-foreground/80 transition-colors hover:text-accent"
+            >
+              Garantía
+            </a>
+            <a
+              href="/tenido-riesgos"
+              className="text-primary-foreground/80 transition-colors hover:text-accent"
+            >
+              Teñido y riesgos
             </a>
           </div>
           <p>Medellín, Colombia</p>

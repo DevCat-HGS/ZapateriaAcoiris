@@ -10,6 +10,7 @@ import {
 import { benefits } from "@/lib/site"
 import { SectionHeading } from "./section-heading"
 import { Reveal } from "./reveal"
+import { TiltCard } from "./tilt-card"
 
 const iconMap: Record<string, LucideIcon> = {
   Award,
@@ -34,20 +35,18 @@ export function WhyChoose() {
           {benefits.map((benefit, i) => {
             const Icon = iconMap[benefit.icon] ?? Award
             return (
-              <Reveal
-                key={benefit.title}
-                delay={i * 70}
-                className="flex flex-col gap-4 rounded-2xl border border-border/70 bg-card p-6 transition-colors hover:border-accent/50"
-              >
-                <span className="flex size-12 items-center justify-center rounded-xl bg-accent/15 text-accent-foreground">
-                  <Icon className="size-6" />
-                </span>
-                <h3 className="font-serif text-lg font-semibold text-primary">
-                  {benefit.title}
-                </h3>
-                <p className="text-pretty leading-relaxed text-muted-foreground">
-                  {benefit.description}
-                </p>
+              <Reveal key={benefit.title} delay={i * 70}>
+                <TiltCard className="group flex h-full flex-col gap-4 rounded-2xl border border-border/70 bg-card p-6 transition-colors hover:border-accent/50">
+                  <span className="flex size-12 items-center justify-center rounded-xl bg-accent/15 text-accent-foreground transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110">
+                    <Icon className="size-6" />
+                  </span>
+                  <h3 className="font-serif text-lg font-semibold text-primary">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-pretty leading-relaxed text-muted-foreground">
+                    {benefit.description}
+                  </p>
+                </TiltCard>
               </Reveal>
             )
           })}
@@ -56,3 +55,4 @@ export function WhyChoose() {
     </section>
   )
 }
+

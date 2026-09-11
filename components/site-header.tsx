@@ -10,6 +10,7 @@ import { WhatsAppButton } from "./whatsapp-button"
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [activeHash, setActiveHash] = useState("#inicio")
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)
@@ -25,17 +26,33 @@ export function SiteHeader() {
     }
   }, [open])
 
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.href.replace("/#", "")))
+      .filter((el): el is HTMLElement => el !== null)
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+        if (visible?.target.id) setActiveHash(`#${visible.target.id}`)
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
+    )
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-border/70 bg-background/85 backdrop-blur-md"
-          : "border-b border-transparent bg-transparent",
+        "fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur-md transition-shadow duration-300",
+        scrolled && "shadow-sm",
       )}
     >
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#inicio" aria-label="Ir al inicio">
+        <a href="/#inicio" aria-label="Ir al inicio" className="transition-transform duration-300 hover:scale-105">
           <Logo />
         </a>
 
@@ -43,15 +60,21 @@ export function SiteHeader() {
           aria-label="Navegación principal"
           className="hidden items-center gap-1 lg:flex"
         >
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="rounded-full px-3 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-secondary hover:text-primary"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = activeHash === link.href.replace("/", "")
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "relative rounded-full px-3 py-2 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 hover:bg-secondary hover:text-primary",
+                  isActive ? "text-primary after:scale-x-100" : "text-foreground/75",
+                )}
+              >
+                {link.label}
+              </a>
+            )
+          })}
         </nav>
 
         <div className="flex items-center gap-2">

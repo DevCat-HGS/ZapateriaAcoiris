@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Fraunces, Manrope } from 'next/font/google'
+import { ScrollProgress } from '@/components/scroll-progress'
 import './globals.css'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arcoiriszapateria.com'
@@ -93,6 +94,7 @@ export default function RootLayout({
       className={`light bg-background ${fraunces.variable} ${manrope.variable}`}
     >
       <body className="font-sans antialiased">
+        <ScrollProgress />
         {children}
       </body>
     </html>
