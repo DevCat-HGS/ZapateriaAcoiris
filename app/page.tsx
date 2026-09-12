@@ -3,7 +3,6 @@ import { Hero } from "@/components/hero"
 import { Problem } from "@/components/problem"
 import { DiagnoseTool } from "@/components/diagnose-tool"
 import { Services } from "@/components/services"
-import { BeforeAfter } from "@/components/before-after"
 import { Experience } from "@/components/experience"
 import { OurStory } from "@/components/our-story"
 import { WhyChoose } from "@/components/why-choose"
@@ -93,7 +92,6 @@ export default function Page() {
         <Problem />
         <DiagnoseTool />
         <Services />
-        <BeforeAfter />
         <Experience />
         <OurStory />
         <WhyChoose />

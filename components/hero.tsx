@@ -34,7 +34,7 @@ export function Hero() {
               Cotizar por WhatsApp
             </WhatsAppButton>
             <a
-              href="/#antes-despues"
+              href="/#servicios"
               className="group inline-flex h-14 items-center justify-center gap-2 rounded-full border border-primary-foreground/30 px-8 text-base font-semibold text-primary-foreground transition-all hover:border-primary-foreground/60 hover:bg-primary-foreground/10"
             >
               Ver nuestros trabajos

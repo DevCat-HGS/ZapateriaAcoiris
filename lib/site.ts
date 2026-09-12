@@ -20,7 +20,6 @@ export const navLinks = [
   { label: "Inicio", href: "/#inicio" },
   { label: "Nosotros", href: "/#problema" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Antes y Después", href: "/#antes-despues" },
   { label: "Nuestra historia", href: "/#historia" },
   { label: "Cómo funciona", href: "/#como-funciona" },
   { label: "Testimonios", href: "/#testimonios" },
@@ -72,8 +71,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "jeans-destenidos",
     title: "Jeans desteñidos",
-    before: "/content/17-antes.jpeg",
-    after: "/content/17-despues.jpeg",
+    before: "/content/IMG-20260908-WA0080.jpg",
+    after: "/content/IMG-20260908-WA0080.jpg",
     description:
       "Recupera el color original de tu jean o dale un tono completamente nuevo mediante teñido industrial.",
     solutions: [
@@ -87,8 +86,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "cambio-color-cuero",
     title: "Cuero que quieres cambiar de color",
-    before: "/content/18-antes.jpeg",
-    after: "/content/18-despues.jpeg",
+    before: "/content/IMG-20260908-WA0333.jpg",
+    after: "/content/IMG-20260908-WA0333.jpg",
     description:
       "Zapatos, botas o bolsos de cuero recuperan su color original o estrenan uno nuevo con teñido especializado.",
     solutions: [
@@ -102,8 +101,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "taloneras-danadas",
     title: "Taloneras dañadas",
-    before: "/content/24-antes.jpeg",
-    after: "/content/24-despues.jpeg",
+    before: "/content/IMG-20260908-WA0097.jpg",
+    after: "/content/IMG-20260908-WA0097.jpg",
     description:
       "El forro y la espuma interna del talón se desgastan por fricción constante y pueden sustituirse.",
     solutions: [
@@ -117,8 +116,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "aseo-calzado",
     title: "Aseo para calzado",
-    before: "/content/60-antes.jpeg",
-    after: "/content/60-despues.jpeg",
+    before: "/content/49-antes.jpg",
+    after: "/content/49-despues.jpg",
     description:
       "Limpieza especializada para recuperar la apariencia de la suela y la parte superior del calzado.",
     solutions: [
@@ -132,8 +131,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "bolsos-danados",
     title: "Bolsos dañados",
-    before: "/content/40-antes.jpeg",
-    after: "/content/40-despues.jpeg",
+    before: "/content/IMG-20260908-WA0181.jpg",
+    after: "/content/IMG-20260908-WA0181.jpg",
     description:
       "Cierres, asas, forros, bases o el color del cuero: evaluamos y restauramos cada parte de tu bolso.",
     solutions: [
@@ -147,8 +146,8 @@ export const articleNeeds: ArticleNeed[] = [
   {
     id: "zapatos-sucios",
     title: "Zapatos sucios (lavandería)",
-    before: "/content/29-antes.jpeg",
-    after: "/content/29-despues.jpeg",
+    before: "/content/29-antes.jpg",
+    after: "/content/29-despues.jpg",
     description:
       "Tus tenis y zapatos merecen un lavado especializado, distinto al de una lavadora convencional.",
     solutions: [
@@ -278,8 +277,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Cambio de talonera en tenis",
     description:
       "Reconstruimos la talonera desgastada devolviendo firmeza y buena apariencia al calzado.",
-    before: "/content/1-antes.jpeg",
-    after: "/content/1-despues.jpeg",
+    before: "/content/1-antes.jpg",
+    after: "/content/1-despues.jpg",
     status: "real",
   },
   {
@@ -288,8 +287,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Restauración de suela amarillenta",
     description:
       "Recuperamos el color original de la suela eliminando el amarillamiento por uso y tiempo.",
-    before: "/content/2-antes.jpeg",
-    after: "/content/2-despues.jpeg",
+    before: "/content/2-antes.jpg",
+    after: "/content/2-despues.jpg",
     status: "real",
   },
   {
@@ -298,8 +297,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Blanqueo de suela deportiva",
     description:
       "Un tratamiento especializado devuelve el blanco original a suelas muy desgastadas.",
-    before: "/content/3-antes.jpeg",
-    after: "/content/3-despues.jpeg",
+    before: "/content/3-antes.jpg",
+    after: "/content/3-despues.jpg",
     status: "real",
   },
   {
@@ -308,8 +307,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Lavado profundo de tenis",
     description:
       "Suciedad acumulada en malla y suela se elimina con un proceso de lavandería especializada.",
-    before: "/content/5-antes.jpeg",
-    after: "/content/5-despues.jpeg",
+    before: "/content/5-antes.jpg",
+    after: "/content/5-despues.jpg",
     status: "real",
   },
   {
@@ -318,8 +317,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Limpieza y cuidado de gamuza",
     description:
       "Manchas y suciedad en gamuza se tratan con productos y técnicas específicas para este material.",
-    before: "/content/7-antes.jpeg",
-    after: "/content/7-despues.jpeg",
+    before: "/content/7-antes.jpg",
+    after: "/content/7-despues.jpg",
     status: "real",
   },
   {
@@ -328,8 +327,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Cambio de suela en zapato de cuero",
     description:
       "Una suela agrietada y perforada se sustituye por una nueva, respetando la construcción original.",
-    before: "/content/8-antes.jpeg",
-    after: "/content/8-despues.jpeg",
+    before: "/content/8-antes.jpg",
+    after: "/content/8-despues.jpg",
     status: "real",
   },
   {
@@ -338,8 +337,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Refuerzo de costuras en tenis",
     description:
       "Reforzamos las zonas debilitadas de la capellada para evitar que la rotura avance.",
-    before: "/content/9-antes.jpeg",
-    after: "/content/9-despues.jpeg",
+    before: "/content/9-antes.jpg",
+    after: "/content/9-despues.jpg",
     status: "real",
   },
   {
@@ -348,8 +347,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Pegado y remonta de botín",
     description:
       "La suela separada se vuelve a pegar y prensar para recuperar solidez y comodidad.",
-    before: "/content/10-antes.jpeg",
-    after: "/content/10-despues.jpeg",
+    before: "/content/10-antes.jpg",
+    after: "/content/10-despues.jpg",
     status: "real",
   },
   {
@@ -358,8 +357,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación y ajuste de pantalón",
     description:
       "Costuras y detalles deteriorados se reparan para que la prenda vuelva a usarse con normalidad.",
-    before: "/content/11-antes.jpeg",
-    after: "/content/11-despues.jpeg",
+    before: "/content/11-antes.jpg",
+    after: "/content/11-despues.jpg",
     status: "real",
   },
   {
@@ -368,8 +367,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación de capellada en tenis",
     description:
       "Un desgarro en la malla se repara devolviendo resistencia y buena apariencia al tenis.",
-    before: "/content/12-antes.jpeg",
-    after: "/content/12-despues.jpeg",
+    before: "/content/12-antes.jpg",
+    after: "/content/12-despues.jpg",
     status: "real",
   },
   {
@@ -378,8 +377,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Cambio de suela deportiva",
     description:
       "Sustituimos una suela desgastada por una nueva, adecuada al tipo de calzado deportivo.",
-    before: "/content/13-antes.jpeg",
-    after: "/content/13-despues.jpeg",
+    before: "/content/13-antes.jpg",
+    after: "/content/13-despues.jpg",
     status: "real",
   },
   {
@@ -388,8 +387,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación de capellada en tenis de running",
     description:
       "Una perforación en el tejido se repara cuidando la flexibilidad propia del material.",
-    before: "/content/14-antes.jpeg",
-    after: "/content/14-despues.jpeg",
+    before: "/content/14-antes.jpg",
+    after: "/content/14-despues.jpg",
     status: "real",
   },
   {
@@ -398,8 +397,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación de capellada deportiva",
     description:
       "Pequeños desgarros en el tejido se corrigen antes de que comprometan todo el calzado.",
-    before: "/content/15-antes.jpeg",
-    after: "/content/15-despues.jpeg",
+    before: "/content/15-antes.jpg",
+    after: "/content/15-despues.jpg",
     status: "real",
   },
   {
@@ -408,8 +407,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Cambio de cuello en tenis",
     description:
       "Sustituimos el cuello deteriorado devolviendo protección y comodidad al tobillo.",
-    before: "/content/16-antes.jpeg",
-    after: "/content/16-despues.jpeg",
+    before: "/content/16-antes.jpg",
+    after: "/content/16-despues.jpg",
     status: "real",
   },
   {
@@ -418,8 +417,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación y restauración de jean",
     description:
       "Roturas y desgaste en la mezclilla se intervienen para prolongar la vida útil de la prenda.",
-    before: "/content/17-antes.jpeg",
-    after: "/content/17-despues.jpeg",
+    before: "/content/17-antes.jpg",
+    after: "/content/17-despues.jpg",
     status: "real",
   },
   {
@@ -428,8 +427,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Restauración de color en botas de cuero",
     description:
       "Igualamos el color y recuperamos el aspecto original de un cuero desgastado por el uso.",
-    before: "/content/18-antes.jpeg",
-    after: "/content/18-despues.jpeg",
+    before: "/content/18-antes.jpg",
+    after: "/content/18-despues.jpg",
     status: "real",
   },
   {
@@ -438,8 +437,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación de tacón en botín",
     description:
       "Recubrimos y perfilamos un tacón deteriorado devolviéndole solidez y buen acabado.",
-    before: "/content/19-antes.jpeg",
-    after: "/content/19-despues.jpeg",
+    before: "/content/19-antes.jpg",
+    after: "/content/19-despues.jpg",
     status: "real",
   },
   {
@@ -448,8 +447,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Restauración de color en tenis de lona",
     description:
       "Un tenis de lona amarillenta recupera su tono original mediante lavado y tratamiento especializado.",
-    before: "/content/20-antes.jpeg",
-    after: "/content/20-despues.jpeg",
+    before: "/content/20-antes.jpg",
+    after: "/content/20-despues.jpg",
     status: "real",
   },
   {
@@ -458,8 +457,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Cambio de suela en tenis",
     description:
       "Una suela perforada se reemplaza devolviendo protección y estabilidad al andar.",
-    before: "/content/21-antes.jpeg",
-    after: "/content/21-despues.jpeg",
+    before: "/content/21-antes.jpg",
+    after: "/content/21-despues.jpg",
     status: "real",
   },
   {
@@ -468,8 +467,8 @@ export const beforeAfterCases: BeforeAfter[] = [
     title: "Reparación de forro interno y talonera",
     description:
       "El forro y la espuma interna deteriorados se sustituyen para eliminar la fricción incómoda.",
-    before: "/content/24-antes.jpeg",
-    after: "/content/24-despues.jpeg",
+    before: "/content/24-antes.jpg",
+    after: "/content/24-despues.jpg",
     status: "real",
   },
 ]
@@ -496,43 +495,43 @@ export const galleryCategories = [
 
 // Fotografías reales de trabajos realizados, agrupadas por tipo de reparación.
 export const galleryItems: GalleryItem[] = [
-  { id: "g-1", category: "Cuellos y taloneras", title: "Cambio de talonera en tenis", image: "/content/1-despues.jpeg", status: "real" },
-  { id: "g-24", category: "Cuellos y taloneras", title: "Reparación de forro y talonera interna", image: "/content/24-despues.jpeg", status: "real" },
-  { id: "g-16", category: "Cuellos y taloneras", title: "Cambio de cuello en tenis", image: "/content/16-despues.jpeg", status: "real" },
+  { id: "g-1", category: "Cuellos y taloneras", title: "Cambio de talonera en tenis", image: "/content/1-despues.jpg", status: "real" },
+  { id: "g-24", category: "Cuellos y taloneras", title: "Reparación de forro y talonera interna", image: "/content/24-despues.jpg", status: "real" },
+  { id: "g-16", category: "Cuellos y taloneras", title: "Cambio de cuello en tenis", image: "/content/16-despues.jpg", status: "real" },
 
-  { id: "g-8", category: "Remontas y suelas", title: "Cambio de suela en zapato de cuero", image: "/content/8-despues.jpeg", status: "real" },
-  { id: "g-10", category: "Remontas y suelas", title: "Pegado y remonta de botín", image: "/content/10-despues.jpeg", status: "real" },
-  { id: "g-13", category: "Remontas y suelas", title: "Cambio de suela deportiva", image: "/content/13-despues.jpeg", status: "real" },
-  { id: "g-21", category: "Remontas y suelas", title: "Cambio de suela en tenis", image: "/content/21-despues.jpeg", status: "real" },
-  { id: "g-27", category: "Remontas y suelas", title: "Remonta de bota con cambio de suela", image: "/content/27-despues.jpeg", status: "real" },
+  { id: "g-8", category: "Remontas y suelas", title: "Cambio de suela en zapato de cuero", image: "/content/8-despues.jpg", status: "real" },
+  { id: "g-10", category: "Remontas y suelas", title: "Pegado y remonta de botín", image: "/content/10-despues.jpg", status: "real" },
+  { id: "g-13", category: "Remontas y suelas", title: "Cambio de suela deportiva", image: "/content/13-despues.jpg", status: "real" },
+  { id: "g-21", category: "Remontas y suelas", title: "Cambio de suela en tenis", image: "/content/21-despues.jpg", status: "real" },
+  { id: "g-27", category: "Remontas y suelas", title: "Remonta de bota con cambio de suela", image: "/content/27-despues.jpg", status: "real" },
 
-  { id: "g-9", category: "Capellada y costuras", title: "Refuerzo de costuras en tenis", image: "/content/9-despues.jpeg", status: "real" },
-  { id: "g-12", category: "Capellada y costuras", title: "Reparación de capellada en tenis", image: "/content/12-despues.jpeg", status: "real" },
-  { id: "g-14", category: "Capellada y costuras", title: "Reparación de capellada en tenis de running", image: "/content/14-despues.jpeg", status: "real" },
-  { id: "g-15", category: "Capellada y costuras", title: "Reparación de capellada deportiva", image: "/content/15-despues.jpeg", status: "real" },
-  { id: "g-31", category: "Capellada y costuras", title: "Reparación de capellada en slip-on", image: "/content/31-despues.jpeg", status: "real" },
+  { id: "g-9", category: "Capellada y costuras", title: "Refuerzo de costuras en tenis", image: "/content/9-despues.jpg", status: "real" },
+  { id: "g-12", category: "Capellada y costuras", title: "Reparación de capellada en tenis", image: "/content/12-despues.jpg", status: "real" },
+  { id: "g-14", category: "Capellada y costuras", title: "Reparación de capellada en tenis de running", image: "/content/14-despues.jpg", status: "real" },
+  { id: "g-15", category: "Capellada y costuras", title: "Reparación de capellada deportiva", image: "/content/15-despues.jpg", status: "real" },
+  { id: "g-31", category: "Capellada y costuras", title: "Reparación de capellada en slip-on", image: "/content/31-despues.jpg", status: "real" },
 
-  { id: "g-19", category: "Tacones y tapas", title: "Reparación de tacón en botín", image: "/content/19-despues.jpeg", status: "real" },
-  { id: "g-45", category: "Tacones y tapas", title: "Reparación de tacón en zapato de cuero", image: "/content/45-despues.jpeg", status: "real" },
-  { id: "g-50", category: "Tacones y tapas", title: "Reparación de sandalia de tacón", image: "/content/50-despues.jpeg", status: "real" },
+  { id: "g-19", category: "Tacones y tapas", title: "Reparación de tacón en botín", image: "/content/19-despues.jpg", status: "real" },
+  { id: "g-45", category: "Tacones y tapas", title: "Reparación de tacón en zapato de cuero", image: "/content/45-despues.jpg", status: "real" },
+  { id: "g-50", category: "Tacones y tapas", title: "Reparación de sandalia de tacón", image: "/content/50-despues.jpg", status: "real" },
 
-  { id: "g-18", category: "Teñido de cuero", title: "Restauración de color en botas de cuero", image: "/content/18-despues.jpeg", status: "real" },
-  { id: "g-25", category: "Teñido de cuero", title: "Teñido de mocasines de cuero", image: "/content/25-despues.jpeg", status: "real" },
+  { id: "g-18", category: "Teñido de cuero", title: "Restauración de color en botas de cuero", image: "/content/18-despues.jpg", status: "real" },
+  { id: "g-25", category: "Teñido de cuero", title: "Teñido de mocasines de cuero", image: "/content/25-despues.jpg", status: "real" },
 
-  { id: "g-17", category: "Teñido de ropa", title: "Reparación y restauración de jean", image: "/content/17-despues.jpeg", status: "real" },
-  { id: "g-11", category: "Teñido de ropa", title: "Reparación y ajuste de pantalón", image: "/content/11-despues.jpeg", status: "real" },
-  { id: "g-55", category: "Teñido de ropa", title: "Teñido de camiseta de algodón", image: "/content/55-despues.jpeg", status: "real" },
+  { id: "g-17", category: "Teñido de ropa", title: "Reparación y restauración de jean", image: "/content/17-despues.jpg", status: "real" },
+  { id: "g-11", category: "Teñido de ropa", title: "Reparación y ajuste de pantalón", image: "/content/11-despues.jpg", status: "real" },
+  { id: "g-55", category: "Teñido de ropa", title: "Teñido de camiseta de algodón", image: "/content/55-despues.jpg", status: "real" },
 
-  { id: "g-2", category: "Lavandería", title: "Restauración de suela amarillenta", image: "/content/2-despues.jpeg", status: "real" },
-  { id: "g-3", category: "Lavandería", title: "Blanqueo de suela deportiva", image: "/content/3-despues.jpeg", status: "real" },
-  { id: "g-5", category: "Lavandería", title: "Lavado profundo de tenis", image: "/content/5-despues.jpeg", status: "real" },
-  { id: "g-7", category: "Lavandería", title: "Limpieza y cuidado de gamuza", image: "/content/7-despues.jpeg", status: "real" },
-  { id: "g-20", category: "Lavandería", title: "Restauración de color en tenis de lona", image: "/content/20-despues.jpeg", status: "real" },
-  { id: "g-29", category: "Lavandería", title: "Lavado de tenis deportivos", image: "/content/29-despues.jpeg", status: "real" },
-  { id: "g-33", category: "Lavandería", title: "Limpieza de sandalia de cuero", image: "/content/33-despues.jpeg", status: "real" },
-  { id: "g-60", category: "Lavandería", title: "Limpieza de sandalias blancas", image: "/content/60-despues.jpeg", status: "real" },
+  { id: "g-2", category: "Lavandería", title: "Restauración de suela amarillenta", image: "/content/2-despues.jpg", status: "real" },
+  { id: "g-3", category: "Lavandería", title: "Blanqueo de suela deportiva", image: "/content/3-despues.jpg", status: "real" },
+  { id: "g-5", category: "Lavandería", title: "Lavado profundo de tenis", image: "/content/5-despues.jpg", status: "real" },
+  { id: "g-7", category: "Lavandería", title: "Limpieza y cuidado de gamuza", image: "/content/7-despues.jpg", status: "real" },
+  { id: "g-20", category: "Lavandería", title: "Restauración de color en tenis de lona", image: "/content/20-despues.jpg", status: "real" },
+  { id: "g-29", category: "Lavandería", title: "Lavado de tenis deportivos", image: "/content/29-despues.jpg", status: "real" },
+  { id: "g-33", category: "Lavandería", title: "Limpieza de sandalia de cuero", image: "/content/33-despues.jpg", status: "real" },
+  { id: "g-60", category: "Lavandería", title: "Limpieza de sandalias blancas", image: "/content/60-despues.jpg", status: "real" },
 
-  { id: "g-40", category: "Bolsos", title: "Restauración y cambio de color en bolso de cuero", image: "/content/40-despues.jpeg", status: "real" },
+  { id: "g-40", category: "Bolsos", title: "Restauración y cambio de color en bolso de cuero", image: "/content/40-despues.jpg", status: "real" },
 ]
 
 export interface Location {

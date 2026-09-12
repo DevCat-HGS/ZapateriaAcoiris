@@ -1,0 +1,890 @@
+[
+  {
+    "servicio": "cambio de capellada",
+    "description": "Servicio especializado de sustitución de la capellada del calzado, ideal para renovar la parte superior del zapato y recuperar su apariencia, funcionalidad y comodidad.",
+    "imagenes": [
+      {
+        "antes": "17-antes.jpg",
+        "despues": "17-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de cordonera en cuero",
+    "description": "Reemplazo especializado de la cordonera en cuero, realizado con materiales adecuados para recuperar la estructura, resistencia y acabado estético del calzado.",
+    "imagenes": [
+      {
+        "antes": "34-antes.jpg",
+        "despues": "34-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de pilón",
+    "description": "Servicio de sustitución del pilón del calzado para recuperar su estructura, estabilidad y funcionalidad, de acuerdo con las características y el estado del artículo.",
+    "imagenes": [
+      {
+        "antes": "84-antes.jpg",
+        "despues": "84-despues.jpg"
+      },
+      {
+        "antes": "2-antes.jpg",
+        "despues": "2-despues.jpg"
+      },
+      {
+        "antes": "56-antes.jpg",
+        "despues": "56-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de cuello",
+    "description": "Reemplazo del cuello del calzado para renovar esta zona, mejorar el acabado y recuperar la comodidad durante el uso.",
+    "imagenes": [
+      {
+        "antes": "84-antes.jpg",
+        "despues": "84-despues.jpg"
+      },
+      {
+        "antes": "85-antes.jpg",
+        "despues": "85-despues.jpg"
+      },
+      {
+        "antes": "56-antes.jpg",
+        "despues": "56-despues.jpg"
+      },
+      {
+        "antes": "108-antes.jpg",
+        "despues": "108-despues.jpg"
+      },
+      {
+        "antes": "68-antes.jpg",
+        "despues": "68-despues.jpg"
+      },
+      {
+        "antes": "95-antes.jpg",
+        "despues": "95-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0371.jpg",
+        "despues": "IMG-20260908-WA0371.jpg"
+      },
+      {
+        "antes": "109-antes.jpg",
+        "despues": "109-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0114.jpg",
+        "despues": "IMG-20260908-WA0114.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta prefabricada de guayos",
+    "description": "Renovación de la base de guayos mediante una remonta prefabricada, utilizando componentes adecuados para recuperar su funcionalidad, estabilidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "19-antes.jpg",
+        "despues": "19-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido industrial de bolsos de cuero",
+    "description": "Proceso especializado de teñido industrial para bolsos de cuero, orientado a renovar su color y mejorar su presentación mediante técnicas adecuadas para el material.",
+    "imagenes": [
+      {
+        "antes": "139-antes.jpg",
+        "despues": "139-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta de neolite para dama",
+    "description": "Renovación de la base de zapatos de dama mediante remonta en neolite, buscando recuperar su funcionalidad, estabilidad, comodidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "133-antes.jpg",
+        "despues": "133-despues.jpg"
+      },
+      {
+        "antes": "67-antes.jpg",
+        "despues": "67-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de suelas",
+    "description": "Sustitución de suelas desgastadas por materiales adecuados al tipo de calzado, buscando recuperar su funcionalidad, estabilidad y durabilidad.",
+    "imagenes": [
+      {
+        "antes": "133-antes.jpg",
+        "despues": "133-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de puntera en cuero",
+    "description": "Reemplazo especializado de la puntera en cuero para renovar la parte frontal del calzado y mejorar su apariencia, protección y acabado.",
+    "imagenes": [
+      {
+        "antes": "5-antes.jpg",
+        "despues": "5-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de tenis de tela",
+    "description": "Servicio especializado de teñido de tenis de tela para renovar o transformar su color, buscando un acabado uniforme y adecuado a las características del material.",
+    "imagenes": [
+      {
+        "antes": "1-antes.jpg",
+        "despues": "1-despues.jpg"
+      },
+      {
+        "antes": "11-antes.jpg",
+        "despues": "11-despues.jpg"
+      },
+      {
+        "antes": "58-antes.jpg",
+        "despues": "58-despues.jpg"
+      },
+      {
+        "antes": "115-antes.jpg",
+        "despues": "115-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0177.jpg",
+        "despues": "IMG-20260908-WA0177.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de tacón",
+    "description": "Sustitución del tacón deteriorado por una pieza adecuada al diseño del calzado, contribuyendo a recuperar su estabilidad, comodidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "7-antes.jpg",
+        "despues": "7-despues.jpg"
+      },
+      {
+        "antes": "13-antes.jpg",
+        "despues": "13-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de tapete",
+    "description": "Renovación del tapete interior del calzado mediante la instalación de un material apropiado para mejorar la comodidad, higiene y presentación interna.",
+    "imagenes": [
+      {
+        "antes": "67-antes.jpg",
+        "despues": "67-despues.jpg"
+      },
+      {
+        "antes": "132-antes.jpg",
+        "despues": "132-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0179.jpg",
+        "despues": "IMG-20260908-WA0179.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0357.jpg",
+        "despues": "IMG-20260908-WA0357.jpg"
+      },
+      {
+        "antes": "53-antes.jpg",
+        "despues": "53-despues.jpg"
+      },
+      {
+        "antes": "65-antes.jpg",
+        "despues": "65-despues.jpg"
+      },
+      {
+        "antes": "104-antes.jpg",
+        "despues": "104-despues.jpg"
+      },
+      {
+        "antes": "110-antes.jpg",
+        "despues": "110-despues.jpg"
+      },
+      {
+        "antes": "106-antes.jpg",
+        "despues": "106-despues.jpg"
+      },
+      {
+        "antes": "80-antes.jpg",
+        "despues": "80-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0077.jpg",
+        "despues": "IMG-20260908-WA0077.jpg"
+      },
+      {
+        "antes": "100-antes.jpg",
+        "despues": "100-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de plantillas",
+    "description": "Reemplazo de las plantillas del calzado para renovar su interior, mejorar la comodidad y proporcionar un acabado adecuado al tipo de artículo.",
+    "imagenes": [
+      {
+        "antes": "10-antes.jpg",
+        "despues": "10-despues.jpg"
+      },
+      {
+        "antes": "20-antes.jpg",
+        "despues": "20-despues.jpg"
+      },
+      {
+        "antes": "21-antes.jpg",
+        "despues": "21-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0040.jpg",
+        "despues": "IMG-20260908-WA0040.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forrado de sandalias",
+    "description": "Servicio de renovación del revestimiento de sandalias mediante materiales seleccionados para mejorar su presentación, comodidad y acabado.",
+    "imagenes": [
+      {
+        "antes": "10-antes.jpg",
+        "despues": "10-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "blanqueamiento de suelas",
+    "description": "Tratamiento especializado para recuperar la apariencia de las suelas claras, ayudando a reducir manchas, suciedad y signos de desgaste superficial.",
+    "imagenes": [
+      {
+        "antes": "4-antes.jpg",
+        "despues": "4-despues.jpg"
+      },
+      {
+        "antes": "51-antes.jpg",
+        "despues": "51-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0201.jpg",
+        "despues": "IMG-20260908-WA0201.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de capellada en cuero",
+    "description": "Sustitución especializada de la capellada en cuero para renovar la parte superior del calzado y recuperar su apariencia, funcionalidad y acabado.",
+    "imagenes": [
+      {
+        "antes": "8-antes.jpg",
+        "despues": "8-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de zapatos de cuero",
+    "description": "Renovación del color de zapatos de cuero mediante un proceso especializado que busca mejorar su apariencia y conservar las características del material.",
+    "imagenes": [
+      {
+        "antes": "9-antes.jpg",
+        "despues": "9-despues.jpg"
+      },
+      {
+        "antes": "16-antes.jpg",
+        "despues": "16-despues.jpg"
+      },
+      {
+        "antes": "69-antes.jpg",
+        "despues": "69-despues.jpg"
+      },
+      {
+        "antes": "127-antes.jpg",
+        "despues": "127-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reconstrucción de botín",
+    "description": "Servicio de reconstrucción de botines que permite recuperar componentes deteriorados y mejorar su estructura, funcionalidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "14-antes.jpg",
+        "despues": "14-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "adaptación de pieza",
+    "description": "Adaptación especializada de piezas para ajustar o reemplazar componentes de un artículo, buscando recuperar su funcionalidad y conservar un acabado adecuado.",
+    "imagenes": [
+      {
+        "antes": "14-antes.jpg",
+        "despues": "14-despues.jpg"
+      },
+      {
+        "antes": "31-antes.jpg",
+        "despues": "31-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de tapas",
+    "description": "Reemplazo de las tapas desgastadas del calzado, especialmente en tacones, para recuperar la estabilidad, seguridad y apariencia del artículo.",
+    "imagenes": [
+      {
+        "antes": "13-antes.jpg",
+        "despues": "13-despues.jpg"
+      },
+      {
+        "antes": "30-antes.jpg",
+        "despues": "30-despues.jpg"
+      },
+      {
+        "antes": "72-antes.jpg",
+        "despues": "72-despues.jpg"
+      },
+      {
+        "antes": "48-antes.jpg",
+        "despues": "48-despues.jpg"
+      },
+      {
+        "antes": "57-antes.jpg",
+        "despues": "57-despues.jpg"
+      },
+      {
+        "antes": "86-antes.jpg",
+        "despues": "86-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0043.jpg",
+        "despues": "IMG-20260908-WA0043.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de correas de cuero",
+    "description": "Sustitución de correas de cuero deterioradas por piezas adecuadas para recuperar la resistencia, funcionalidad y presentación del artículo.",
+    "imagenes": [
+      {
+        "antes": "85-antes.jpg",
+        "despues": "85-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta en crupón",
+    "description": "Servicio especializado de remonta utilizando cuero crupón, material reconocido por su resistencia y durabilidad, ideal para renovar la base y estructura de determinados tipos de calzado.",
+    "imagenes": [
+      {
+        "antes": "134-antes.jpg",
+        "despues": "134-despues.jpg"
+      },
+      {
+        "antes": "15-antes.jpg",
+        "despues": "15-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0311.jpg",
+        "despues": "IMG-20260908-WA0311.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta en crepé",
+    "description": "Renovación de la base del calzado mediante una remonta en crepé, material que aporta flexibilidad, comodidad y una apariencia adecuada al diseño del artículo.",
+    "imagenes": [
+      {
+        "antes": "131-antes.jpg",
+        "despues": "131-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta de zapatos de dama",
+    "description": "Servicio especializado de remonta para zapatos de dama, orientado a renovar la base del calzado y recuperar su funcionalidad, comodidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "76-antes.jpg",
+        "despues": "76-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reconstrucción de pilón",
+    "description": "Reconstrucción especializada del pilón del calzado para recuperar su estructura y funcionalidad, utilizando técnicas y materiales adecuados a las condiciones del artículo.",
+    "imagenes": [
+      {
+        "antes": "120-antes.jpg",
+        "despues": "120-despues.jpg"
+      },
+      {
+        "antes": "109-antes.jpg",
+        "despues": "109-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0114.jpg",
+        "despues": "IMG-20260908-WA0114.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta en crepé habano",
+    "description": "Renovación de la base del calzado mediante remonta en crepé habano, una alternativa que combina funcionalidad, flexibilidad y un acabado distintivo.",
+    "imagenes": [
+      {
+        "antes": "135-antes.jpg",
+        "despues": "135-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta de sandalias",
+    "description": "Servicio de renovación de la base de sandalias para recuperar su funcionalidad, estabilidad y presentación, teniendo en cuenta el diseño y los materiales originales.",
+    "imagenes": [
+      {
+        "antes": "18-antes.jpg",
+        "despues": "18-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forrado de plantilla en cuero",
+    "description": "Revestimiento de plantillas con cuero seleccionado para mejorar el acabado interior del calzado, aportando comodidad y una presentación más cuidada.",
+    "imagenes": [
+      {
+        "antes": "20-antes.jpg",
+        "despues": "20-despues.jpg"
+      },
+      {
+        "antes": "21-antes.jpg",
+        "despues": "21-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reparación de capellada",
+    "description": "Reparación especializada de la capellada del calzado para corregir deterioros y recuperar, en la medida de lo posible, su apariencia, resistencia y funcionalidad.",
+    "imagenes": [
+      {
+        "antes": "23-antes.jpg",
+        "despues": "23-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "protector para zapatos de dama",
+    "description": "Elaboración o instalación de protectores para zapatos de dama, diseñados para ayudar a conservar el calzado y proteger zonas específicas frente al desgaste.",
+    "imagenes": [
+      {
+        "antes": "129-antes.jpg",
+        "despues": "129-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de prendas de algodón",
+    "description": "Servicio especializado de teñido de prendas de algodón para renovar o transformar su color, buscando un resultado uniforme y adecuado a las características de la tela.",
+    "imagenes": [
+      {
+        "antes": "70-antes.jpg",
+        "despues": "70-despues.jpg"
+      },
+      {
+        "antes": "96-antes.jpg",
+        "despues": "96-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reconstrucción de cuello",
+    "description": "Reconstrucción especializada del cuello del calzado para recuperar su forma, estructura y acabado, mejorando su funcionalidad y comodidad.",
+    "imagenes": [
+      {
+        "antes": "108-antes.jpg",
+        "despues": "108-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de chaquetas de cuero",
+    "description": "Renovación del color de chaquetas de cuero mediante un proceso especializado que busca mejorar su apariencia y conservar las características del material.",
+    "imagenes": [
+      {
+        "antes": "71-antes.jpg",
+        "despues": "71-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forro de tacón",
+    "description": "Renovación del revestimiento exterior del tacón mediante materiales adecuados para mejorar su presentación y recuperar el acabado original del calzado.",
+    "imagenes": [
+      {
+        "antes": "30-antes.jpg",
+        "despues": "30-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0043.jpg",
+        "despues": "IMG-20260908-WA0043.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reparación de botas",
+    "description": "Servicio especializado de reparación de botas para atender diferentes tipos de deterioro y recuperar su funcionalidad, resistencia y presentación.",
+    "imagenes": [
+      {
+        "antes": "31-antes.jpg",
+        "despues": "31-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de piezas externas",
+    "description": "Reemplazo de piezas externas deterioradas de calzado y otros artículos, utilizando componentes adecuados para recuperar su apariencia y funcionalidad.",
+    "imagenes": [
+      {
+        "antes": "68-antes.jpg",
+        "despues": "68-despues.jpg"
+      },
+      {
+        "antes": "93-antes.jpg",
+        "despues": "93-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de cuello en cuero",
+    "description": "Sustitución del cuello en cuero para renovar esta zona del calzado, mejorar su acabado y recuperar la comodidad y resistencia del artículo.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0093.jpg",
+        "despues": "IMG-20260908-WA0093.jpg"
+      },
+      {
+        "antes": "78-antes.jpg",
+        "despues": "78-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "adaptación de guayos de taches altos",
+    "description": "Servicio especializado de adaptación de guayos de taches altos, orientado a ajustar determinados componentes del calzado según sus características y necesidades de uso.",
+    "imagenes": [
+      {
+        "antes": "100-antes.jpg",
+        "despues": "100-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de bolsos de cuero",
+    "description": "Renovación del color de bolsos de cuero mediante técnicas especializadas que buscan mejorar su apariencia, uniformidad y presentación, respetando las características del material.",
+    "imagenes": [
+      {
+        "antes": "136-antes.jpg",
+        "despues": "136-despues.jpg"
+      },
+      {
+        "antes": "25-antes.jpg",
+        "despues": "25-despues.jpg"
+      },
+      {
+        "antes": "41-antes.jpg",
+        "despues": "41-despues.jpg"
+      },
+      {
+        "antes": "45-antes.jpg",
+        "despues": "45-despues.jpg"
+      },
+      {
+        "antes": "89-antes.jpg",
+        "despues": "89-despues.jpg"
+      },
+      {
+        "antes": "116-antes.jpg",
+        "despues": "116-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reparación de pilón",
+    "description": "Reparación especializada del pilón del calzado para corregir deterioros y recuperar su estructura, estabilidad y funcionalidad.",
+    "imagenes": [
+      {
+        "antes": "22-antes.jpg",
+        "despues": "22-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de pantalones de algodón",
+    "description": "Servicio de teñido de pantalones de algodón para renovar o cambiar su color, buscando un acabado uniforme y adecuado al tipo de tela.",
+    "imagenes": [
+      {
+        "antes": "54-antes.jpg",
+        "despues": "54-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta prefabricada",
+    "description": "Renovación de la base del calzado mediante una remonta prefabricada, utilizando componentes diseñados para recuperar su funcionalidad, estabilidad y presentación.",
+    "imagenes": [
+      {
+        "antes": "27-antes.jpg",
+        "despues": "27-despues.jpg"
+      },
+      {
+        "antes": "28-antes.jpg",
+        "despues": "28-despues.jpg"
+      },
+      {
+        "antes": "102-antes.jpg",
+        "despues": "102-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forro de tacón en cascada natural",
+    "description": "Revestimiento especializado de tacones con cascada natural, buscando recuperar su acabado, mejorar su presentación y conservar la armonía estética del calzado.",
+    "imagenes": [
+      {
+        "antes": "122-antes.jpg",
+        "despues": "122-despues.jpg"
+      },
+      {
+        "antes": "48-antes.jpg",
+        "despues": "48-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forro de tacón en cuero",
+    "description": "Revestimiento de tacones en cuero para renovar su apariencia, mejorar el acabado y proporcionar una solución adecuada al diseño del calzado.",
+    "imagenes": [
+      {
+        "antes": "57-antes.jpg",
+        "despues": "57-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "forro de tacón en puntilla",
+    "description": "Renovación del revestimiento del tacón utilizando puntilla, con un acabado pensado para conservar o realzar la estética del calzado.",
+    "imagenes": [
+      {
+        "antes": "86-antes.jpg",
+        "despues": "86-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reparación de botas de motociclista",
+    "description": "Reparación especializada de botas de motociclista para atender el desgaste de sus componentes y recuperar, según su estado, la resistencia, funcionalidad y presentación del artículo.",
+    "imagenes": [
+      {
+        "antes": "97-antes.jpg",
+        "despues": "97-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de botas de cuero",
+    "description": "Renovación del color de botas de cuero mediante un proceso especializado que busca mejorar su apariencia y conservar las características del material.",
+    "imagenes": [
+      {
+        "antes": "82-antes.jpg",
+        "despues": "82-despues.jpg"
+      },
+      {
+        "antes": "90-antes.jpg",
+        "despues": "90-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "tejido de tenis en lona o malla",
+    "description": "Reparación y reconstrucción de zonas tejidas en tenis de lona o malla, utilizando técnicas adecuadas para recuperar su apariencia, ventilación y funcionalidad.",
+    "imagenes": [
+      {
+        "antes": "119-antes.jpg",
+        "despues": "119-despues.jpg"
+      },
+      {
+        "antes": "99-antes.jpg",
+        "despues": "99-despues.jpg"
+      },
+      {
+        "antes": "50-antes.jpg",
+        "despues": "50-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0044.jpg",
+        "despues": "IMG-20260908-WA0044.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "lavado especializado de tenis",
+    "description": "Limpieza especializada de tenis mediante procedimientos adecuados a sus materiales y acabados, orientada a eliminar suciedad y mejorar su presentación.",
+    "imagenes": [
+      {
+        "antes": "91-antes.jpg",
+        "despues": "91-despues.jpg"
+      },
+      {
+        "antes": "101-antes.jpg",
+        "despues": "101-despues.jpg"
+      },
+      {
+        "antes": "49-antes.jpg",
+        "despues": "49-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de pilón en cuero",
+    "description": "Sustitución del pilón en cuero mediante materiales adecuados para recuperar la estructura, resistencia y acabado del calzado.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0370.jpg",
+        "despues": "IMG-20260908-WA0370.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de pulseras en sandalias de cuero",
+    "description": "Reemplazo de pulseras deterioradas en sandalias de cuero para recuperar su funcionalidad, ajuste y presentación.",
+    "imagenes": [
+      {
+        "antes": "32-antes.jpg",
+        "despues": "32-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "remonta de zapatos de hombre",
+    "description": "Servicio especializado de remonta para zapatos de hombre, orientado a renovar la base del calzado y recuperar su funcionalidad, comodidad y apariencia.",
+    "imagenes": [
+      {
+        "antes": "112-antes.jpg",
+        "despues": "112-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de sandalias de cuero",
+    "description": "Renovación del color de sandalias de cuero mediante técnicas especializadas que buscan mejorar su presentación y conservar las características del material.",
+    "imagenes": [
+      {
+        "antes": "113-antes.jpg",
+        "despues": "113-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de tapete especial",
+    "description": "Reemplazo especializado del tapete del calzado mediante materiales seleccionados según las características del artículo, buscando mejorar su comodidad y acabado interior.",
+    "imagenes": [
+      {
+        "antes": "117-antes.jpg",
+        "despues": "117-despues.jpg"
+      },
+      {
+        "antes": "111-antes.jpg",
+        "despues": "111-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "adaptación de pulseras a sandalias",
+    "description": "Adaptación de pulseras en sandalias para mejorar su ajuste, funcionalidad y comodidad, respetando el diseño y los materiales del artículo.",
+    "imagenes": [
+      {
+        "antes": "81-antes.jpg",
+        "despues": "81-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "pegado de zapatos",
+    "description": "Servicio especializado de pegado de zapatos para reparar uniones desprendidas y recuperar la resistencia y funcionalidad del calzado, según el estado de sus materiales.",
+    "imagenes": [
+      {
+        "antes": "114-antes.jpg",
+        "despues": "114-despues.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de tenis de tela y cuero",
+    "description": "Servicio especializado de teñido de tenis fabricados en tela y cuero, orientado a renovar su color y mejorar su presentación de acuerdo con las características de cada material.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0207.jpg",
+        "despues": "IMG-20260908-WA0207.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "protector para zapatos",
+    "description": "Instalación o elaboración de protectores para zapatos, diseñados para ayudar a conservar el calzado y reducir el desgaste en zonas específicas.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0073.jpg",
+        "despues": "IMG-20260908-WA0073.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "cambio de capellada en sandalias",
+    "description": "Sustitución de la capellada de sandalias para renovar su parte superior y recuperar su apariencia, funcionalidad y comodidad.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0061.jpg",
+        "despues": "IMG-20260908-WA0061.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de chaquetas",
+    "description": "Servicio de renovación o cambio de color de chaquetas mediante un proceso especializado, adecuado a las características y composición del material.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0065.jpg",
+        "despues": "IMG-20260908-WA0065.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "reparación de capellada en sandalias",
+    "description": "Reparación especializada de la capellada de sandalias para corregir deterioros y recuperar su apariencia, resistencia y funcionalidad.",
+    "imagenes": [
+      {
+        "antes": "IMG-20260908-WA0193.jpg",
+        "despues": "IMG-20260908-WA0193.jpg"
+      }
+    ]
+  },
+  {
+    "servicio": "teñido de prendas de jean",
+    "description": "Servicio especializado de teñido de prendas de jean para renovar o transformar su color, buscando un acabado uniforme y adecuado a las características de la tela.",
+    "imagenes": [
+      {
+        "antes": "94-antes.jpg",
+        "despues": "94-despues.jpg"
+      },
+      {
+        "antes": "IMG-20260908-WA0080.jpg",
+        "despues": "IMG-20260908-WA0080.jpg"
+      }
+    ]
+  }
+]
