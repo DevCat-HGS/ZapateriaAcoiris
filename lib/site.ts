@@ -170,6 +170,105 @@ export const articleNeeds: ArticleNeed[] = [
   },
 ]
 
+export interface Service {
+  slug: string
+  title: string
+  description: string
+  image: string
+  context: WhatsAppContext
+}
+
+export const services: Service[] = [
+  {
+    slug: "cambio-suelas",
+    title: "Cambio de suelas",
+    description:
+      "Reemplazo de suelas desgastadas con materiales de alta resistencia.",
+    image: "/images/service-calzado.png",
+    context: "calzado",
+  },
+  {
+    slug: "costura-profesional",
+    title: "Costura profesional",
+    description:
+      "Restauración de costuras rotas con hilo de alta resistencia.",
+    image: "/images/service-calzado.png",
+    context: "calzado",
+  },
+  {
+    slug: "restauracion-cuero",
+    title: "Restauración de cuero",
+    description:
+      "Tratamiento y reparación de superficies de cuero dañado.",
+    image: "/images/service-cuero.png",
+    context: "cuero",
+  },
+  {
+    slug: "reparacion-botas",
+    title: "Reparación de botas",
+    description:
+      "Servicio especializado para botas de trabajo y moda.",
+    image: "/images/service-calzado.png",
+    context: "calzado",
+  },
+  {
+    slug: "ajustes-calzado",
+    title: "Ajustes de calzado",
+    description:
+      "Adaptación de calzado para mayor comodidad y ajuste.",
+    image: "/images/service-calzado.png",
+    context: "calzado",
+  },
+  {
+    slug: "reparacion-bolsos",
+    title: "Reparación de bolsos",
+    description:
+      "Restauración de bolsos de cuero, costuras, cremalleras y asas dañadas.",
+    image: "/images/service-bolsos.png",
+    context: "bolsos",
+  },
+  {
+    slug: "reparacion-chaquetas",
+    title: "Reparación de chaquetas",
+    description:
+      "Arreglo de chaquetas de cuero: cierres, costuras y restauración de superficies.",
+    image: "/images/service-ropa.png",
+    context: "ropa",
+  },
+  {
+    slug: "reparacion-carteras",
+    title: "Reparación de carteras",
+    description:
+      "Reparación de carteras y billeteras de cuero, costuras y cierres.",
+    image: "/images/service-bolsos.png",
+    context: "bolsos",
+  },
+  {
+    slug: "tenido-cuero",
+    title: "Teñido de cuero",
+    description:
+      "Teñido profesional de cuero para restaurar o cambiar el color de tus prendas y accesorios.",
+    image: "/images/service-cuero.png",
+    context: "cuero",
+  },
+  {
+    slug: "tenido-tela",
+    title: "Teñido de tela",
+    description:
+      "Teñimos camisas y prendas de tela devolviéndoles el color original o un nuevo estilo.",
+    image: "/images/service-ropa.png",
+    context: "ropa",
+  },
+  {
+    slug: "otros-articulos-cuero",
+    title: "Otros artículos de cuero",
+    description:
+      "Reparación y restauración de cinturones, maletines y todo tipo de artículos de cuero.",
+    image: "/images/service-otros.png",
+    context: "otros",
+  },
+]
+
 export const beforeAfterCases: BeforeAfter[] = buildBeforeAfterCases()
 
 export const galleryCategories = [
