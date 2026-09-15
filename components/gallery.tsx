@@ -80,7 +80,7 @@ export function Gallery() {
             >
               <Image
                 src={item.image}
-                alt={item.title}
+                alt={`${item.title} — ${item.category} realizado en Arcoiris Zapatería Especializada, Medellín`}
                 fill
                 sizes="(max-width: 640px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -126,7 +126,7 @@ export function Gallery() {
           >
             <Image
               src={selected.image}
-              alt={selected.title}
+              alt={`${selected.title} — ${selected.category} realizado en Arcoiris Zapatería Especializada, Medellín`}
               fill
               sizes="(max-width: 640px) 100vw, 32rem"
               className="object-cover"

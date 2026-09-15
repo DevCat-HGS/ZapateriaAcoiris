@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/patch-next-codeframe.cjs && next dev --webpack",
+    "build": "node scripts/patch-next-codeframe.cjs && next build --webpack",
+    "postinstall": "node scripts/patch-next-codeframe.cjs",
     "start": "next start",
     "lint": "eslint ."
   },

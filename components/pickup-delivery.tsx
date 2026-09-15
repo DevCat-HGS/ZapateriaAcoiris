@@ -10,8 +10,8 @@ export function PickupDelivery() {
         <div className="grid items-center gap-10 overflow-hidden rounded-3xl border border-border/70 bg-card shadow-sm lg:grid-cols-2">
           <div className="relative aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[26rem]">
             <Image
-              src="/images/delivery.png"
-              alt="Entrega de un artículo reparado en la puerta del cliente"
+              src="/content/49-despues.jpg"
+              alt="Tenis después de un lavado especializado en Arcoiris"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

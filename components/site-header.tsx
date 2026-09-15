@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { navLinks } from "@/lib/site"
+import { business, navLinks } from "@/lib/site"
 import { Logo } from "./logo"
+import { InstagramIcon } from "./social-icons"
 import { WhatsAppButton } from "./whatsapp-button"
 
 export function SiteHeader() {
@@ -78,6 +79,15 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href={business.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Instagram ${business.instagram.handle}`}
+            className="hidden size-10 items-center justify-center rounded-full border border-border bg-background/60 text-primary transition-colors hover:bg-secondary sm:flex"
+          >
+            <InstagramIcon className="size-5" />
+          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -113,6 +123,16 @@ export function SiteHeader() {
               {link.label}
             </a>
           ))}
+          <a
+            href={business.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-2 rounded-lg px-3 py-3 text-base font-medium text-foreground/80 transition-colors hover:bg-secondary hover:text-primary"
+          >
+            <InstagramIcon className="size-5" />
+            {business.instagram.handle}
+          </a>
           <WhatsAppButton
             context="cotizar"
             size="md"

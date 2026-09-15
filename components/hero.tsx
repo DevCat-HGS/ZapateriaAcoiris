@@ -19,8 +19,13 @@ export function Hero() {
             {business.experienceYears} en Medellín
           </Reveal>
 
-          <Reveal as="h1" delay={80} className="text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-primary-foreground sm:text-5xl lg:text-6xl">
-            Damos nueva vida a tus <span className="text-shimmer">favoritos.</span>
+          <Reveal as="h1" delay={80} className="text-balance font-serif font-semibold tracking-tight text-primary-foreground">
+            <span className="block text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
+              Damos nueva vida a tus <span className="text-shimmer">favoritos.</span>
+            </span>
+            <span className="mt-4 block text-lg font-medium leading-snug text-primary-foreground/90 sm:text-xl lg:text-2xl">
+              Reparación y restauración de calzado, tenis, bolsos y artículos de cuero en Medellín
+            </span>
           </Reveal>
 
           <Reveal as="p" delay={160} className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-primary-foreground/85">

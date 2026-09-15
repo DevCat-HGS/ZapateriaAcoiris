@@ -10,6 +10,9 @@ interface ComparisonSliderProps {
   after: string
   beforeAlt: string
   afterAlt: string
+  className?: string
+  /** Úsalo solo en la primera comparación visible para mejorar el LCP. */
+  priority?: boolean
 }
 
 export function ComparisonSlider({
@@ -17,6 +20,8 @@ export function ComparisonSlider({
   after,
   beforeAlt,
   afterAlt,
+  className,
+  priority = false,
 }: ComparisonSliderProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState(50)
@@ -83,7 +88,10 @@ export function ComparisonSlider({
   return (
     <div
       ref={containerRef}
-      className="group relative aspect-[4/3] w-full touch-none select-none overflow-hidden rounded-2xl border border-border/70 shadow-sm"
+      className={cn(
+        "group relative aspect-[4/3] w-full touch-none select-none overflow-hidden rounded-2xl border border-border/70 shadow-sm",
+        className,
+      )}
       onPointerDown={(e) => beginDrag(e.clientX)}
     >
       <div className="absolute inset-0">
@@ -91,6 +99,7 @@ export function ComparisonSlider({
           src={after}
           alt={afterAlt}
           fill
+          priority={priority}
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover"
           draggable={false}
@@ -111,6 +120,7 @@ export function ComparisonSlider({
           src={before}
           alt={beforeAlt}
           fill
+          priority={priority}
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover"
           draggable={false}

@@ -2,12 +2,14 @@ import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { JsonLd } from "@/components/json-ld"
+import { breadcrumbSchema } from "@/lib/seo"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcoiriszapateria.com"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Conoce el oficio | Diccionario del calzado y materiales | Arcoiris",
+  title: "Conoce el oficio: diccionario del calzado y materiales",
   description:
     "Diccionario del calzado y de los materiales que utilizamos en Arcoiris Zapatería Especializada: remonta, capellada, cuello, talonera, crupón, crepé, neolite y más.",
   keywords: [
@@ -81,6 +83,9 @@ const materialTerms = [
 export default function OficioPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([{ name: "Conoce el oficio", path: "/oficio" }])}
+      />
       <SiteHeader />
       <main className="bg-background">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

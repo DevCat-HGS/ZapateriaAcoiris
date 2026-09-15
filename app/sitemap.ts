@@ -1,40 +1,48 @@
 import type { MetadataRoute } from "next"
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcoiriszapateria.com"
+import { absoluteUrl, siteUrl } from "@/lib/seo"
+import { beforeAfterCases } from "@/lib/site"
 
 export const dynamic = "force-static"
 
+// Se limita a un conjunto representativo para no inflar el sitemap con las 300+ fotos.
+const homeImages = [
+  ...new Set(beforeAfterCases.map((item) => absoluteUrl(item.after))),
+].slice(0, 24)
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date()
+
   return [
     {
       url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified,
+      changeFrequency: "weekly",
       priority: 1,
+      images: homeImages,
     },
     {
       url: `${siteUrl}/oficio`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${siteUrl}/privacy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.7,
     },
     {
       url: `${siteUrl}/garantia`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.4,
     },
     {
       url: `${siteUrl}/tenido-riesgos`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.4,
+    },
+    {
+      url: `${siteUrl}/privacy`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.2,
     },
   ]
 }

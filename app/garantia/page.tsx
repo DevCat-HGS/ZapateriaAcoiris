@@ -2,12 +2,14 @@ import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { JsonLd } from "@/components/json-ld"
+import { breadcrumbSchema } from "@/lib/seo"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcoiriszapateria.com"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Política de garantía | Arcoiris Zapatería Especializada",
+  title: "Política de garantía de reparaciones",
   description:
     "Condiciones de garantía de las reparaciones y restauraciones realizadas por Arcoiris Zapatería Especializada.",
   keywords: [
@@ -50,6 +52,11 @@ export const metadata: Metadata = {
 export default function GarantiaPolicyPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Política de garantía", path: "/garantia" },
+        ])}
+      />
       <SiteHeader />
       <main className="bg-background">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

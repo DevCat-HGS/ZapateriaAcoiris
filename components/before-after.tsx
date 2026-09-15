@@ -4,6 +4,8 @@ import { SectionHeading } from "./section-heading"
 import { WhatsAppButton } from "./whatsapp-button"
 import { Reveal } from "./reveal"
 
+const featuredCases = beforeAfterCases.slice(0, 12)
+
 export function BeforeAfter() {
   return (
     <section
@@ -18,7 +20,7 @@ export function BeforeAfter() {
         />
 
         <div className="mt-14 flex flex-col gap-14">
-          {beforeAfterCases.map((item, i) => (
+          {featuredCases.map((item, i) => (
             <Reveal
               key={item.id}
               variant={i % 2 === 1 ? "right" : "left"}

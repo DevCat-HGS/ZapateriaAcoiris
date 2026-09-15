@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { ChevronDown, Sparkles } from "lucide-react"
 import { articleNeeds } from "@/lib/site"
 import { SectionHeading } from "./section-heading"
 import { Reveal } from "./reveal"
 import { WhatsAppButton } from "./whatsapp-button"
+import { ComparisonSlider } from "./comparison-slider"
 import { cn } from "@/lib/utils"
 
 export function Problem() {
@@ -28,34 +28,31 @@ export function Problem() {
               <Reveal
                 key={need.id}
                 delay={i * 70}
-                className="rounded-2xl border border-border/70 bg-card transition-colors hover:border-accent/50"
+                className="overflow-hidden rounded-2xl border border-border/70 bg-card transition-colors hover:border-accent/50"
               >
+                <ComparisonSlider
+                  before={need.before}
+                  after={need.after}
+                  beforeAlt={`${need.title} — antes de la reparación en Arcoiris Zapatería, Medellín`}
+                  afterAlt={`${need.title} — después de la reparación en Arcoiris Zapatería, Medellín`}
+                  className="rounded-none border-0 shadow-none"
+                  priority={i === 0}
+                />
                 <button
                   type="button"
                   onClick={() => setOpenId(isOpen ? null : need.id)}
                   aria-expanded={isOpen}
-                  className="flex w-full flex-col text-left"
+                  className="flex w-full items-center justify-between gap-3 p-5 text-left"
                 >
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-2xl">
-                    <Image
-                      src={need.after}
-                      alt={need.title}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex items-center justify-between gap-3 p-5">
-                    <h3 className="font-serif text-lg font-semibold text-primary">
-                      {need.title}
-                    </h3>
-                    <ChevronDown
-                      className={cn(
-                        "size-5 shrink-0 text-muted-foreground transition-transform duration-300",
-                        isOpen && "rotate-180 text-accent-foreground",
-                      )}
-                    />
-                  </div>
+                  <h3 className="font-serif text-lg font-semibold text-primary">
+                    {need.title}
+                  </h3>
+                  <ChevronDown
+                    className={cn(
+                      "size-5 shrink-0 text-muted-foreground transition-transform duration-300",
+                      isOpen && "rotate-180 text-accent-foreground",
+                    )}
+                  />
                 </button>
 
                 <div

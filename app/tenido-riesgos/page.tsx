@@ -2,12 +2,14 @@ import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { JsonLd } from "@/components/json-ld"
+import { breadcrumbSchema } from "@/lib/seo"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arcoiriszapateria.com"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Política de teñido y riesgos | Arcoiris Zapatería Especializada",
+  title: "Política de teñido de cuero y prendas: alcance y riesgos",
   description:
     "Condiciones, alcance y riesgos técnicos del teñido de cuero y de prendas de algodón en Arcoiris Zapatería Especializada.",
   keywords: [
@@ -51,6 +53,11 @@ export const metadata: Metadata = {
 export default function TenidoRiesgosPolicyPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Política de teñido y riesgos", path: "/tenido-riesgos" },
+        ])}
+      />
       <SiteHeader />
       <main className="bg-background">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

@@ -1,9 +1,14 @@
 import type { Metadata, Viewport } from 'next'
 import { Fraunces, Manrope } from 'next/font/google'
 import { ScrollProgress } from '@/components/scroll-progress'
+import {
+  defaultDescription,
+  defaultTitle,
+  primaryKeywords,
+  siteName,
+  siteUrl,
+} from '@/lib/seo'
 import './globals.css'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arcoiriszapateria.com'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -19,28 +24,29 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title:
-    'Arcoiris Zapatería Especializada | Reparación de Calzado y Cuero en Medellín',
-  description:
-    'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero en Medellín. Cambio de suelas, teñido, costuras y más, con 40 años de experiencia y recogida y entrega en el Área Metropolitana.',
-  keywords: [
-    'reparación de calzado Medellín',
-    'reparación de zapatos Medellín',
-    'reparación de bolsos Medellín',
-    'reparación de cuero Medellín',
-    'restauración de calzado',
-    'zapatería especializada Medellín',
-    'reparación de calzado Laureles',
-    'reparación de calzado El Poblado',
-    'cambio de suelas Medellín',
-    'teñido de cuero Medellín',
-    'reparación de chaquetas de cuero Medellín',
-  ],
-  authors: [{ name: 'Arcoiris Zapatería Especializada' }],
-  creator: 'Arcoiris Zapatería Especializada',
-  publisher: 'Arcoiris Zapatería Especializada',
+  title: {
+    default: defaultTitle,
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  keywords: primaryKeywords,
+  applicationName: siteName,
+  authors: [{ name: siteName, url: siteUrl }],
+  creator: siteName,
+  publisher: siteName,
+  category: 'Reparación y restauración de calzado',
+  manifest: '/manifest.webmanifest',
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: true,
+  },
   alternates: {
     canonical: '/',
+    languages: {
+      'es-CO': '/',
+      'x-default': '/',
+    },
   },
   robots: {
     index: true,
@@ -56,25 +62,47 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_CO',
-    title:
-      'Arcoiris Zapatería Especializada | Reparación de Calzado y Cuero en Medellín',
-    description:
-      'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero. Cambio de suelas, teñido, costuras y más en Medellín, con recogida y entrega en el Área Metropolitana.',
-    siteName: 'Arcoiris Zapatería Especializada',
-    images: [{ url: '/images/hero.png', width: 1200, height: 630, alt: 'Restauración de calzado en cuero' }],
+    url: siteUrl,
+    title: defaultTitle,
+    description: defaultDescription,
+    siteName,
+    images: [
+      {
+        url: '/content/17-despues.jpg',
+        width: 1200,
+        height: 900,
+        alt: 'Zapato de cuero restaurado en Arcoiris Zapatería Especializada, Medellín',
+      },
+      {
+        url: '/logo-empresa.png',
+        width: 512,
+        height: 512,
+        alt: siteName,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Arcoiris Zapatería Especializada | Reparación de Calzado en Medellín',
-    description:
-      'Reparación profesional de calzado, bolsos, chaquetas y artículos de cuero. Cambio de suelas, teñido, costuras y más en Medellín.',
-    images: ['/images/hero.png'],
+    title: defaultTitle,
+    description: defaultDescription,
+    images: ['/content/17-despues.jpg'],
   },
   icons: {
-    icon: [{ url: '/icon.png', rel: 'icon', type: 'image/png' }],
-    shortcut: ['/icon.png'],
-    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    shortcut: ['/favicon.ico'],
+    apple: [{ url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' }],
+  },
+  // Se llena con el token de Google Search Console cuando esté disponible.
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
+  other: {
+    'geo.region': 'CO-ANT',
+    'geo.placename': 'Medellín',
   },
 }
 

@@ -6,17 +6,15 @@ import { Counter } from "./counter"
 import { HeroBeforeAfter } from "./hero-before-after"
 
 export function HeroVisual() {
-  const [videoAvailable, setVideoAvailable] = useState(true)
+  const [showVideo, setShowVideo] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
   const [pointer, setPointer] = useState({ x: 0.5, y: 0.35 })
   const reducedMotionRef = useRef(false)
 
   useEffect(() => {
     reducedMotionRef.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    if (reducedMotionRef.current) {
-      videoRef.current?.pause()
-      return
-    }
+    setShowVideo(!reducedMotionRef.current)
+    if (reducedMotionRef.current) return
     const onMove = (e: PointerEvent) => {
       setPointer({ x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight })
     }
@@ -34,7 +32,7 @@ export function HeroVisual() {
   return (
     <>
       <div className="absolute inset-0 -z-20">
-        {videoAvailable && (
+        {showVideo ? (
           <video
             ref={videoRef}
             className="size-full object-cover"
@@ -43,17 +41,16 @@ export function HeroVisual() {
             loop
             playsInline
             preload="metadata"
-            poster="/images/hero.png"
-            onError={() => setVideoAvailable(false)}
+            poster="/content/17-despues.jpg"
+            onError={() => setShowVideo(false)}
           >
             <source src="/videos/hero.webm" type="video/webm" />
             <source src="/videos/hero.mp4" type="video/mp4" />
           </video>
-        )}
-        {!videoAvailable && (
+        ) : (
           <Image
-            src="/images/hero.png"
-            alt="Artesano restaurando un zapato de cuero en su taller"
+            src="/content/17-despues.jpg"
+            alt="Resultado de un cambio de capellada realizado en Arcoiris"
             fill
             priority
             sizes="100vw"
