@@ -8,6 +8,10 @@ export interface DiagnosisSolution {
   materials: string[]
   duration: string
   factors: string
+  /** Señales con las que el cliente reconoce el problema, o razones para intervenir. */
+  signals?: { heading: string; items: string[] }
+  /** Página de servicio donde está la explicación completa. */
+  page?: string
 }
 
 // Contenido de referencia para la herramienta "Diagnostica tu artículo".
@@ -21,6 +25,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 2 y 5 días hábiles, según la construcción del calzado.",
     factors:
       "El tipo de construcción, el material original de la suela y el estado de componentes cercanos (cambrión, entresuela) pueden afectar el alcance del trabajo.",
+    page: "/servicios/remonta-de-calzado",
   },
   remonta: {
     id: "remonta",
@@ -31,6 +36,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Aproximadamente 3 a 6 días hábiles.",
     factors:
       "La construcción del zapato, el material disponible y el nivel de deterioro determinan el alcance de la remonta.",
+    page: "/servicios/remonta-de-calzado",
   },
   tapa: {
     id: "tapa",
@@ -40,6 +46,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cauchos de distinta dureza", "Materiales sintéticos para tacón"],
     duration: "Servicio rápido, normalmente el mismo día.",
     factors: "El tipo de tacón y su sistema de fijación determinan el material más adecuado.",
+    page: "/servicios/reparacion-de-calzado",
   },
   tacon: {
     id: "tacon",
@@ -50,6 +57,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 1 y 3 días hábiles.",
     factors:
       "No todos los tacones o plataformas pueden modificarse sin alterar la estructura del calzado; por eso siempre evaluamos antes de intervenir.",
+    page: "/servicios/reparacion-de-calzado",
   },
   "cuello-talonera": {
     id: "cuello-talonera",
@@ -60,6 +68,18 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 2 y 4 días hábiles.",
     factors:
       "El desgaste por fricción y la pérdida de acolchado son las causas más comunes; repararlo evita que el borde deteriorado siga generando incomodidad.",
+    signals: {
+      heading: "Problemas habituales",
+      items: [
+        "Desgaste por fricción",
+        "Rotura del material",
+        "Forro deteriorado",
+        "Espuma expuesta",
+        "Costuras abiertas",
+        "Pérdida de acolchado",
+      ],
+    },
+    page: "/servicios/reparacion-de-calzado",
   },
   cambrion: {
     id: "cambrion",
@@ -70,6 +90,17 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 3 y 5 días hábiles.",
     factors:
       "No todos los zapatos incorporan cambrión y su construcción puede variar, por lo que el proceso depende del modelo específico.",
+    signals: {
+      heading: "Cómo se nota cuando se deteriora",
+      items: [
+        "Inestabilidad al caminar",
+        "Flexión incorrecta del zapato",
+        "Ruidos",
+        "Deformación de la zona media",
+        "Pérdida de soporte",
+      ],
+    },
+    page: "/servicios/reparacion-de-calzado",
   },
   capellada: {
     id: "capellada",
@@ -80,6 +111,19 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 2 y 4 días hábiles.",
     factors:
       "El material de la capellada y la extensión del daño determinan si se repara, refuerza o sustituye una sección.",
+    signals: {
+      heading: "Daños que solemos encontrar",
+      items: [
+        "Roturas",
+        "Desgarros",
+        "Costuras abiertas",
+        "Arañazos",
+        "Desprendimientos",
+        "Deformaciones",
+        "Desgaste general",
+      ],
+    },
+    page: "/servicios/reparacion-de-calzado",
   },
   cordones: {
     id: "cordones",
@@ -89,6 +133,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cordones planos y redondos", "Distintos materiales y colores"],
     duration: "Servicio inmediato.",
     factors: "El tipo de ojales y el estilo del calzado ayudan a definir el cordón más adecuado.",
+    page: "/servicios/reparacion-de-calzado",
   },
   cordonera: {
     id: "cordonera",
@@ -98,6 +143,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Ojales metálicos", "Ganchos", "Refuerzos textiles o de cuero"],
     duration: "Entre 1 y 3 días hábiles.",
     factors: "El material de la capellada alrededor de la cordonera determina el tipo de refuerzo posible.",
+    page: "/servicios/reparacion-de-calzado",
   },
   plantilla: {
     id: "plantilla",
@@ -107,6 +153,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Plantillas prehormadas", "Materiales estructurales de soporte"],
     duration: "Servicio inmediato o hasta 2 días si requiere adaptación.",
     factors: "El tipo de calzado y la necesidad puntual del pie definen la plantilla adecuada.",
+    page: "/servicios/reparacion-de-calzado",
   },
   pegado: {
     id: "pegado",
@@ -116,7 +163,8 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Adhesivos específicos según cuero, caucho, sintético, textil, espuma o EVA"],
     duration: "Entre 1 y 3 días hábiles, según el tiempo de curado del adhesivo.",
     factors:
-      "El material, la porosidad, la flexibilidad, la temperatura de trabajo y el tipo de esfuerzo determinan el adhesivo adecuado.",
+      "El material, la porosidad, la flexibilidad, la temperatura de trabajo, el tipo de esfuerzo, el área de contacto y la construcción del calzado determinan el adhesivo adecuado.",
+    page: "/servicios/pegado-de-calzado",
   },
   lavado: {
     id: "lavado",
@@ -127,6 +175,16 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 1 y 2 días hábiles.",
     factors:
       "El exceso de agua, los residuos de jabón y un secado incorrecto pueden dañar ciertos materiales; por eso evaluamos cada componente antes de lavar.",
+    signals: {
+      heading: "Por qué no conviene lavarlos en casa",
+      items: [
+        "Exceso de agua: puede afectar materiales, espumas, adhesivos y estructuras",
+        "Residuos de jabón: un enjuague insuficiente deja halos al secarse",
+        "Secado incorrecto: la humedad prolongada genera olores y otros problemas",
+        "Materiales diferentes: un mismo tenis mezcla cuero, malla, sintético, caucho y espuma, y cada componente requiere un tratamiento distinto",
+      ],
+    },
+    page: "/servicios/lavanderia-de-calzado",
   },
   "tenido-cuero": {
     id: "tenido-cuero",
@@ -137,6 +195,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 3 y 5 días hábiles.",
     factors:
       "El estado previo del cuero (grietas, resequedad) y el color solicitado influyen en el resultado. Consulta nuestra política de teñido y riesgos.",
+    page: "/servicios/tenido-de-cuero",
   },
   restauracion: {
     id: "restauracion",
@@ -146,6 +205,17 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Según el material del artículo (cuero, sintético, textil)"],
     duration: "Entre 3 y 7 días hábiles, según el alcance.",
     factors: "El valor sentimental o económico del artículo y su estado de conservación ayudan a definir el alcance.",
+    signals: {
+      heading: "Por qué vale la pena restaurar",
+      items: [
+        "Valor económico del artículo",
+        "Valor sentimental",
+        "Calidad de construcción",
+        "Diseño difícil de reemplazar",
+        "Materiales que todavía pueden recuperarse",
+      ],
+    },
+    page: "/servicios/tenido-de-cuero",
   },
   cierre: {
     id: "cierre",
@@ -155,6 +225,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cierres metálicos/cobre", "Cierres de nylon", "Cursores de repuesto"],
     duration: "Entre 1 y 3 días hábiles.",
     factors: "El tipo de cierre original y su compatibilidad con el diseño del bolso determinan la solución.",
+    page: "/servicios/reparacion-de-bolsos",
   },
   asa: {
     id: "asa",
@@ -164,6 +235,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cuero", "Materiales sintéticos compatibles"],
     duration: "Entre 2 y 4 días hábiles.",
     factors: "El sistema de fijación original y el peso que debe soportar el asa influyen en el material elegido.",
+    page: "/servicios/reparacion-de-bolsos",
   },
   forro: {
     id: "forro",
@@ -173,6 +245,11 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Telas de forro", "Refuerzos internos"],
     duration: "Entre 3 y 5 días hábiles.",
     factors: "La cantidad de bolsillos, compartimentos y cierres internos afecta el tiempo de confección.",
+    signals: {
+      heading: "El forro nuevo puede incluir",
+      items: ["Bolsillos", "Compartimentos", "Cierres internos", "Refuerzos"],
+    },
+    page: "/servicios/reparacion-de-bolsos",
   },
   base: {
     id: "base",
@@ -182,6 +259,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cuero", "Materiales reforzados resistentes al roce"],
     duration: "Entre 2 y 4 días hábiles.",
     factors: "El peso habitual que carga el bolso y el material original definen la solución más duradera.",
+    page: "/servicios/reparacion-de-bolsos",
   },
   "tapa-bolso": {
     id: "tapa-bolso",
@@ -191,6 +269,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Cuero", "Sintéticos compatibles con el diseño original"],
     duration: "Entre 2 y 4 días hábiles.",
     factors: "El sistema de cierre de la tapa (broche, imán, hebilla) condiciona el proceso de adaptación.",
+    page: "/servicios/reparacion-de-bolsos",
   },
   herrajes: {
     id: "herrajes",
@@ -200,6 +279,11 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Herrajes metálicos de distintos acabados"],
     duration: "Entre 1 y 3 días hábiles.",
     factors: "La resistencia y el acabado del herraje deben ser compatibles con el uso real del artículo.",
+    signals: {
+      heading: "Herrajes que trabajamos",
+      items: ["Argollas", "Hebillas", "Mosquetones", "Broches", "Remaches", "Pasadores"],
+    },
+    page: "/servicios/reparacion-de-bolsos",
   },
   costuras: {
     id: "costuras",
@@ -209,6 +293,18 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Hilos de alta resistencia"],
     duration: "Entre 1 y 2 días hábiles.",
     factors: "El punto de tensión y la carga habitual del artículo determinan el refuerzo necesario.",
+    signals: {
+      heading: "Problemas que resolvemos",
+      items: [
+        "Hilo roto",
+        "Costura abierta",
+        "Desgarro",
+        "Unión debilitada",
+        "Asa descosida",
+        "Bolsillo desprendido",
+      ],
+    },
+    page: "/servicios/reparacion-de-bolsos",
   },
   "tenido-ropa": {
     id: "tenido-ropa",
@@ -219,6 +315,18 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     duration: "Entre 3 y 5 días hábiles.",
     factors:
       "La composición de la prenda (algodón, poliéster, elastano) puede generar variaciones de color entre materiales. Consulta nuestra política de teñido y riesgos.",
+    signals: {
+      heading: "Vale la pena teñir cuando",
+      items: [
+        "La prenda tiene buena calidad",
+        "El tejido está en buen estado",
+        "El diseño todavía gusta",
+        "Tiene valor sentimental",
+        "El desgaste está principalmente relacionado con el color",
+        "Se desea cambiar completamente su apariencia",
+      ],
+    },
+    page: "/servicios/tenido-de-prendas",
   },
   "restauracion-color": {
     id: "restauracion-color",
@@ -228,6 +336,7 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Colorantes específicos según el material"],
     duration: "Entre 3 y 5 días hábiles.",
     factors: "El teñido no elimina daños estructurales ni manchas permanentes; por eso evaluamos antes de intervenir.",
+    page: "/servicios/tenido-de-prendas",
   },
   "recuperacion-apariencia": {
     id: "recuperacion-apariencia",
@@ -237,6 +346,49 @@ export const diagnosisSolutions: Record<string, DiagnosisSolution> = {
     materials: ["Según el tejido y estado de la prenda"],
     duration: "Entre 2 y 4 días hábiles.",
     factors: "El estado de la fibra y del diseño original determinan qué tan renovada puede quedar la prenda.",
+    page: "/servicios/tenido-de-prendas",
+  },
+  tirantas: {
+    id: "tirantas",
+    title: "Tirantas de morral",
+    what: "Las tirantas soportan todo el peso del morral y concentran la tensión en los puntos donde se unen al cuerpo de la pieza.",
+    how: "Evaluamos el anclaje, reforzamos o sustituimos la tiranta y rematamos las costuras de unión para que la carga se reparta de nuevo.",
+    materials: ["Cintas de alta resistencia", "Cuero", "Hilos reforzados", "Herrajes de ajuste"],
+    duration: "Entre 2 y 4 días hábiles.",
+    factors:
+      "Los morrales y maletas reciben cargas y tensiones superiores a las de muchos bolsos: buscamos recuperar la resistencia de la zona, no solo cerrar el daño.",
+    page: "/servicios/reparacion-de-bolsos",
+  },
+  correas: {
+    id: "correas",
+    title: "Reparación de correas",
+    what: "La correa es la pieza que permite cargar el artículo al hombro o cruzado y suele fallar en los extremos y en los puntos de ajuste.",
+    how: "Reparamos o fabricamos la correa considerando largo, ancho y sistema de fijación, y reforzamos los extremos que reciben la tensión.",
+    materials: ["Cuero", "Cintas sintéticas", "Herrajes de ajuste"],
+    duration: "Entre 2 y 4 días hábiles.",
+    factors: "El peso que carga el artículo y el tipo de herraje definen el material y el refuerzo necesarios.",
+    page: "/servicios/reparacion-de-bolsos",
+  },
+  bolsillos: {
+    id: "bolsillos",
+    title: "Bolsillos y compartimentos",
+    what: "Los bolsillos internos y externos se descosen o se rompen por el uso, y a veces arrastran el forro con ellos.",
+    how: "Reparamos la costura, reforzamos la boca del bolsillo o confeccionamos uno nuevo con la tela adecuada, según el daño.",
+    materials: ["Telas de forro", "Cierres de repuesto", "Refuerzos internos"],
+    duration: "Entre 2 y 4 días hábiles.",
+    factors: "Si el forro completo está deteriorado suele convenir cambiarlo antes que reparar bolsillo por bolsillo.",
+    page: "/servicios/reparacion-de-bolsos",
+  },
+  refuerzos: {
+    id: "refuerzos",
+    title: "Refuerzo de zonas de tensión",
+    what: "En morrales y maletas hay zonas que concentran esfuerzo: anclajes de tirantas, esquinas, bases y bocas de cierre.",
+    how: "Identificamos el punto que cede, añadimos refuerzo interno o externo compatible con el diseño y rematamos la costura.",
+    materials: ["Cuero", "Cintas de refuerzo", "Materiales rígidos para base", "Hilos de alta resistencia"],
+    duration: "Entre 2 y 5 días hábiles.",
+    factors:
+      "Reforzar una zona cambia cómo se reparte la carga: por eso evaluamos toda la pieza y no solo el punto roto.",
+    page: "/servicios/reparacion-de-bolsos",
   },
 }
 
@@ -288,6 +440,24 @@ export const diagnosisCategories: DiagnosisCategory[] = [
     ],
   },
   {
+    id: "botas",
+    label: "Botas",
+    emoji: "🥾",
+    context: "calzado",
+    problems: [
+      { id: "remonta", label: "Remonta" },
+      { id: "suela-desgastada", label: "Suela desgastada" },
+      { id: "tapa", label: "Tapa" },
+      { id: "cuello-talonera", label: "Cuello / talonera" },
+      { id: "capellada", label: "Capellada" },
+      { id: "cordonera", label: "Cordonera" },
+      { id: "cordones", label: "Cordones" },
+      { id: "pegado", label: "Pegado" },
+      { id: "tenido-cuero", label: "Teñido de cuero" },
+      { id: "restauracion", label: "Restauración" },
+    ],
+  },
+  {
     id: "bolsos",
     label: "Bolsos",
     emoji: "👜",
@@ -304,6 +474,42 @@ export const diagnosisCategories: DiagnosisCategory[] = [
     ],
   },
   {
+    id: "morrales",
+    label: "Morrales",
+    emoji: "🎒",
+    context: "bolsos",
+    problems: [
+      { id: "tirantas", label: "Tirantas" },
+      { id: "cierre", label: "Cierre" },
+      { id: "costuras", label: "Costuras" },
+      { id: "bolsillos", label: "Bolsillos" },
+      { id: "forro", label: "Forro" },
+      { id: "base", label: "Base" },
+      { id: "herrajes", label: "Herrajes" },
+      { id: "correas", label: "Correas" },
+      { id: "refuerzos", label: "Refuerzos" },
+      { id: "restauracion", label: "Restauración" },
+    ],
+  },
+  {
+    id: "maletas",
+    label: "Maletas y maletines",
+    emoji: "💼",
+    context: "bolsos",
+    problems: [
+      { id: "cierre", label: "Cierre" },
+      { id: "asa", label: "Asa" },
+      { id: "tirantas", label: "Tirantas" },
+      { id: "correas", label: "Correas" },
+      { id: "forro", label: "Forro" },
+      { id: "base", label: "Base" },
+      { id: "herrajes", label: "Herrajes" },
+      { id: "costuras", label: "Costuras" },
+      { id: "refuerzos", label: "Refuerzos" },
+      { id: "restauracion", label: "Restauración" },
+    ],
+  },
+  {
     id: "prendas",
     label: "Prendas",
     emoji: "👕",
@@ -312,6 +518,20 @@ export const diagnosisCategories: DiagnosisCategory[] = [
       { id: "tenido-ropa", label: "Teñido" },
       { id: "restauracion-color", label: "Restauración de color" },
       { id: "recuperacion-apariencia", label: "Recuperación de apariencia" },
+    ],
+  },
+  {
+    id: "cuero",
+    label: "Artículos de cuero",
+    emoji: "🧥",
+    context: "cuero",
+    problems: [
+      { id: "tenido-cuero", label: "Teñido de cuero" },
+      { id: "restauracion", label: "Restauración" },
+      { id: "restauracion-color", label: "Restauración de color" },
+      { id: "costuras", label: "Costuras" },
+      { id: "cierre", label: "Cierre" },
+      { id: "herrajes", label: "Herrajes" },
     ],
   },
 ]

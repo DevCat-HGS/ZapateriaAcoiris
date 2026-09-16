@@ -1,12 +1,4 @@
-import {
-  Award,
-  Boxes,
-  HeartHandshake,
-  Layers,
-  MessageCircle,
-  Truck,
-  type LucideIcon,
-} from "lucide-react"
+import { Search, Award, HeartHandshake, Layers, type LucideIcon } from "lucide-react"
 import { benefits } from "@/lib/site"
 import { SectionHeading } from "./section-heading"
 import { Reveal } from "./reveal"
@@ -16,22 +8,20 @@ const iconMap: Record<string, LucideIcon> = {
   Award,
   HeartHandshake,
   Layers,
-  Boxes,
-  Truck,
-  MessageCircle,
+  Search,
 }
 
 export function WhyChoose() {
   return (
-    <section className="py-20 lg:py-28">
+    <section id="por-que-arcoiris" className="py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="¿Por qué elegir Arcoiris?"
-          title="Sabemos reparar lo que tú valoras."
-          description="Cuidamos, recuperamos, restauramos y prolongamos la vida útil de tus artículos con atención personalizada."
+          eyebrow="¿Por qué Arcoiris?"
+          title="No reparamos todo de la misma manera."
+          description="Cada zapato, tenis, bolso o prenda tiene una construcción, unos materiales, un desgaste y una historia diferente. Por eso primero observamos, después diagnosticamos y finalmente elegimos la técnica y los materiales."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {benefits.map((benefit, i) => {
             const Icon = iconMap[benefit.icon] ?? Award
             return (
@@ -55,4 +45,3 @@ export function WhyChoose() {
     </section>
   )
 }
-

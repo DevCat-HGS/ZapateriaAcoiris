@@ -32,7 +32,9 @@ export function capitalizeServiceTitle(servicio: string) {
 export function repairCategory(servicio: string): string {
   const s = servicio.toLowerCase()
 
-  if (s.includes("bolso")) return "Bolsos"
+  if (s.includes("bolso") || s.includes("morral") || s.includes("maleta") || s.includes("maletín") || s.includes("maletin")) {
+    return "Bolsos"
+  }
   if (s.includes("lavado") || s.includes("blanque")) return "Lavandería"
   if (s.includes("teñido") || s.includes("tenida")) {
     if (

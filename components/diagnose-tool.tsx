@@ -1,7 +1,15 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowLeft, CheckCircle2, Clock, Layers, ListChecks } from "lucide-react"
+import {
+  AlertCircle,
+  ArrowLeft,
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  Layers,
+  ListChecks,
+} from "lucide-react"
 import { diagnosisCategories, diagnosisSolutions } from "@/lib/diagnosis"
 import { SectionHeading } from "./section-heading"
 import { Reveal } from "./reveal"
@@ -133,6 +141,28 @@ export function DiagnoseTool() {
                 <p className="text-pretty leading-relaxed text-foreground">{solution.what}</p>
               </div>
 
+              {solution.signals && (
+                <div className="space-y-1.5">
+                  <p className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+                    <AlertCircle className="size-4" /> {solution.signals.heading}
+                  </p>
+                  <ul className="grid gap-1.5 sm:grid-cols-2">
+                    {solution.signals.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-2 text-pretty text-sm leading-relaxed text-foreground"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent"
+                        />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <div className="space-y-1.5">
                 <p className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                   <ListChecks className="size-4" /> Cómo lo reparamos
@@ -171,6 +201,16 @@ export function DiagnoseTool() {
                   {solution.factors}
                 </p>
               </div>
+
+              {solution.page && (
+                <a
+                  href={solution.page}
+                  className="group inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-accent-foreground"
+                >
+                  Ver la explicación completa de este servicio
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              )}
 
               <div className="flex flex-col gap-3 pt-2 sm:flex-row">
                 <WhatsAppButton context={category.context} size="lg" className="flex-1">

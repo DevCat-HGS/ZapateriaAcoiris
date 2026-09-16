@@ -98,6 +98,21 @@ export default function OficioPage() {
               sencillo, las partes del calzado y los materiales que utilizamos para que entiendas mejor
               cómo trabajamos cada reparación.
             </p>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Las guías de cada oficio están en{" "}
+              <a href="/servicios/reparacion-de-calzado" className="font-semibold text-primary underline-offset-4 hover:underline">
+                reparación de calzado
+              </a>
+              ,{" "}
+              <a href="/servicios/remonta-de-calzado" className="font-semibold text-primary underline-offset-4 hover:underline">
+                remonta
+              </a>
+              ,{" "}
+              <a href="/servicios/pegado-de-calzado" className="font-semibold text-primary underline-offset-4 hover:underline">
+                pegado
+              </a>
+              {" "}y el resto de páginas de servicio.
+            </p>
 
             <h2 className="mt-12 text-2xl font-semibold text-foreground">Diccionario del calzado</h2>
             <dl className="mt-6 grid gap-5 sm:grid-cols-2">

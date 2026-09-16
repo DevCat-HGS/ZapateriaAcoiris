@@ -1,20 +1,27 @@
 import serviceSegments from "@/public/data/services.json"
 import { whatsappLink } from "@/lib/whatsapp"
+import { repairCategory } from "@/lib/repair-catalog"
+import { servicePageHrefForCategory, servicePageLinks } from "@/lib/service-pages"
 import { SectionHeading } from "./section-heading"
 import { Reveal } from "./reveal"
 import { ServiceComparisonCard, type ServiceComparisonImage } from "./service-comparison-card"
 import { TiltCard } from "./tilt-card"
 import { WhatsAppIcon } from "./whatsapp-icon"
+import { ArrowRight } from "lucide-react"
 
-const segmentedServices = serviceSegments.map((service) => ({
-  title: service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1),
-  description: service.description,
-  images: service.imagenes.map<ServiceComparisonImage>((image) => ({
-    before: `/content/${image.antes}`,
-    after: `/content/${image.despues}`,
-    hasComparison: image.antes !== image.despues,
-  })),
-}))
+const segmentedServices = serviceSegments.map((service) => {
+  const category = repairCategory(service.servicio)
+  return {
+    title: service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1),
+    description: service.description,
+    href: servicePageHrefForCategory(category),
+    images: service.imagenes.map<ServiceComparisonImage>((image) => ({
+      before: `/content/${image.antes}`,
+      after: `/content/${image.despues}`,
+      hasComparison: image.antes !== image.despues,
+    })),
+  }
+})
 
 export function Services() {
   return (
@@ -23,10 +30,23 @@ export function Services() {
         <SectionHeading
           eyebrow="Servicios"
           title="Reparamos mucho más que zapatos."
-          description="Explora nuestras especialidades. Cada tarjeta muestra un caso real elegido al azar de ese servicio y anima la comparación únicamente cuando está en pantalla."
+          description="Guías completas de cada oficio y el catálogo con fotos reales del taller."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 flex flex-wrap justify-center gap-2">
+          {servicePageLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:border-accent/60 hover:text-primary"
+            >
+              {link.label}
+              <ArrowRight className="size-3.5" />
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {segmentedServices.map((service, index) => (
             <Reveal key={service.title} delay={Math.min(index * 45, 360)}>
               <TiltCard className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
@@ -36,15 +56,26 @@ export function Services() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {service.description}
                   </p>
-                  <a
-                    href={whatsappLink("general")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-accent-foreground"
-                  >
-                    <WhatsAppIcon className="size-4 text-whatsapp" />
-                    Consultar por WhatsApp
-                  </a>
+                  <div className="mt-5 flex flex-col gap-2">
+                    {service.href && (
+                      <a
+                        href={service.href}
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-accent-foreground"
+                      >
+                        Ver la guía de este servicio
+                        <ArrowRight className="size-4" />
+                      </a>
+                    )}
+                    <a
+                      href={whatsappLink("general")}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-accent-foreground"
+                    >
+                      <WhatsAppIcon className="size-4 text-whatsapp" />
+                      Consultar por WhatsApp
+                    </a>
+                  </div>
                 </div>
               </TiltCard>
             </Reveal>

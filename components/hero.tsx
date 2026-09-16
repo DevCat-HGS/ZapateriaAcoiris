@@ -29,21 +29,29 @@ export function Hero() {
           </Reveal>
 
           <Reveal as="p" delay={160} className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-primary-foreground/85">
-            Reparamos y restauramos calzado, bolsos, prendas y artículos de cuero.
-            También ofrecemos teñido de ropa y lavandería especializada de calzado,
-            respaldados por 40 años de experiencia.
+            Restauramos y reparamos los artículos que todavía tienen mucho por dar.
+            Recuperamos zapatos, tenis, botas, bolsos, morrales, maletines, chaquetas
+            y prendas. Lavandería de calzado, tintorería de prendas de algodón y
+            teñido de artículos de cuero.
           </Reveal>
 
-          <Reveal delay={240} className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Reveal delay={240} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <WhatsAppButton context="cotizar" size="lg">
-              Cotizar por WhatsApp
+              Enviar fotos para valoración
             </WhatsAppButton>
             <a
-              href="/#servicios"
+              href="/#galeria"
               className="group inline-flex h-14 items-center justify-center gap-2 rounded-full border border-primary-foreground/30 px-8 text-base font-semibold text-primary-foreground transition-all hover:border-primary-foreground/60 hover:bg-primary-foreground/10"
             >
-              Ver nuestros trabajos
+              Ver reparaciones
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+            </a>
+            <a
+              href="/#antes-despues"
+              className="group inline-flex h-14 items-center justify-center gap-2 rounded-full border border-primary-foreground/30 px-8 text-base font-semibold text-primary-foreground transition-all hover:border-primary-foreground/60 hover:bg-primary-foreground/10"
+            >
+              Ver antes y después
+              <Sparkles className="size-4 transition-transform group-hover:scale-110" />
             </a>
           </Reveal>
 

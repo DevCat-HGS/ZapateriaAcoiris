@@ -41,6 +41,13 @@ export const footerExtraLinks = [
   { label: "Antes y después", href: "/#antes-despues" },
   { label: "Galería", href: "/#galeria" },
   { label: "Conoce el oficio", href: "/oficio" },
+  { label: "Reparación de calzado", href: "/servicios/reparacion-de-calzado" },
+  { label: "Remonta", href: "/servicios/remonta-de-calzado" },
+  { label: "Pegado", href: "/servicios/pegado-de-calzado" },
+  { label: "Lavandería", href: "/servicios/lavanderia-de-calzado" },
+  { label: "Teñido de cuero", href: "/servicios/tenido-de-cuero" },
+  { label: "Teñido de prendas", href: "/servicios/tenido-de-prendas" },
+  { label: "Bolsos y morrales", href: "/servicios/reparacion-de-bolsos" },
 ]
 
 // TODO: reemplazar con los datos reales del fundador y los hitos exactos de la empresa.
@@ -167,105 +174,6 @@ export const articleNeeds: ArticleNeed[] = [
       "Secado controlado para evitar olores y daños",
     ],
     context: "calzado",
-  },
-]
-
-export interface Service {
-  slug: string
-  title: string
-  description: string
-  image: string
-  context: WhatsAppContext
-}
-
-export const services: Service[] = [
-  {
-    slug: "cambio-suelas",
-    title: "Cambio de suelas",
-    description:
-      "Reemplazo de suelas desgastadas con materiales de alta resistencia.",
-    image: "/images/service-calzado.png",
-    context: "calzado",
-  },
-  {
-    slug: "costura-profesional",
-    title: "Costura profesional",
-    description:
-      "Restauración de costuras rotas con hilo de alta resistencia.",
-    image: "/images/service-calzado.png",
-    context: "calzado",
-  },
-  {
-    slug: "restauracion-cuero",
-    title: "Restauración de cuero",
-    description:
-      "Tratamiento y reparación de superficies de cuero dañado.",
-    image: "/images/service-cuero.png",
-    context: "cuero",
-  },
-  {
-    slug: "reparacion-botas",
-    title: "Reparación de botas",
-    description:
-      "Servicio especializado para botas de trabajo y moda.",
-    image: "/images/service-calzado.png",
-    context: "calzado",
-  },
-  {
-    slug: "ajustes-calzado",
-    title: "Ajustes de calzado",
-    description:
-      "Adaptación de calzado para mayor comodidad y ajuste.",
-    image: "/images/service-calzado.png",
-    context: "calzado",
-  },
-  {
-    slug: "reparacion-bolsos",
-    title: "Reparación de bolsos",
-    description:
-      "Restauración de bolsos de cuero, costuras, cremalleras y asas dañadas.",
-    image: "/images/service-bolsos.png",
-    context: "bolsos",
-  },
-  {
-    slug: "reparacion-chaquetas",
-    title: "Reparación de chaquetas",
-    description:
-      "Arreglo de chaquetas de cuero: cierres, costuras y restauración de superficies.",
-    image: "/images/service-ropa.png",
-    context: "ropa",
-  },
-  {
-    slug: "reparacion-carteras",
-    title: "Reparación de carteras",
-    description:
-      "Reparación de carteras y billeteras de cuero, costuras y cierres.",
-    image: "/images/service-bolsos.png",
-    context: "bolsos",
-  },
-  {
-    slug: "tenido-cuero",
-    title: "Teñido de cuero",
-    description:
-      "Teñido profesional de cuero para restaurar o cambiar el color de tus prendas y accesorios.",
-    image: "/images/service-cuero.png",
-    context: "cuero",
-  },
-  {
-    slug: "tenido-tela",
-    title: "Teñido de tela",
-    description:
-      "Teñimos camisas y prendas de tela devolviéndoles el color original o un nuevo estilo.",
-    image: "/images/service-ropa.png",
-    context: "ropa",
-  },
-  {
-    slug: "otros-articulos-cuero",
-    title: "Otros artículos de cuero",
-    description:
-      "Reparación y restauración de cinturones, maletines y todo tipo de artículos de cuero.",
-    image: "/images/service-otros.png",
-    context: "otros",
   },
 ]
 
@@ -417,38 +325,27 @@ export const faqs: Faq[] = [
 
 export const benefits = [
   {
-    title: "40 años de experiencia",
+    title: "Oficio",
     description:
-      "Experiencia en reparación y restauración de diferentes artículos.",
+      "Experiencia acumulada durante décadas. El oficio se transmite de generación en generación y se aplica a cada artículo, no a un proceso genérico.",
     icon: "Award",
   },
   {
-    title: "Atención personalizada",
-    description: "Cada artículo puede requerir una solución diferente.",
-    icon: "HeartHandshake",
-  },
-  {
-    title: "Reparación y cuidado del cuero",
+    title: "Conocimiento de materiales",
     description:
-      "Especialistas en reparación de artículos de cuero, teñido industrial de toda clase de artículos de cuero y venta de artículos para su renovación y cuidado.",
+      "No tratamos todos los materiales de la misma manera. Cuero, sintético, textil, gamuza, nobuck o EVA piden preparación, adhesivo y acabado distintos.",
     icon: "Layers",
   },
   {
-    title: "Trabajamos diferentes materiales",
+    title: "Diagnóstico",
     description:
-      "Además del cuero, recibimos artículos en materiales sintéticos y otros materiales.",
-    icon: "Boxes",
+      "Evaluamos antes de intervenir. Identificamos qué componente falló, por qué y cuál es la mejor manera de recuperarlo, con honestidad sobre los límites.",
+    icon: "Search",
   },
   {
-    title: "Recogida y entrega",
+    title: "Restauración",
     description:
-      "Servicio disponible para clientes del Área Metropolitana de Medellín.",
-    icon: "Truck",
-  },
-  {
-    title: "Atención directa por WhatsApp",
-    description:
-      "Envía fotografías y consulta directamente con un asesor.",
-    icon: "MessageCircle",
+      "Buscamos prolongar la vida útil de artículos que todavía tienen valor económico, sentimental o de construcción, dentro de lo técnicamente posible.",
+    icon: "HeartHandshake",
   },
 ]

@@ -42,9 +42,12 @@ export function HeroVisual() {
             playsInline
             preload="metadata"
             poster="/content/17-despues.jpg"
-            onError={() => setShowVideo(false)}
+            // Solo recae en la imagen si falla el propio video: un <source> roto
+            // dispara error en el hijo y apagaría el video aunque sí se pueda reproducir.
+            onError={(event) => {
+              if (event.target === event.currentTarget) setShowVideo(false)
+            }}
           >
-            <source src="/videos/hero.webm" type="video/webm" />
             <source src="/videos/hero.mp4" type="video/mp4" />
           </video>
         ) : (

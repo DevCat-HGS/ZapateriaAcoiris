@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
+import { ShowcaseCarousel } from "@/components/showcase-carousel"
 import { Problem } from "@/components/problem"
 import { DiagnoseTool } from "@/components/diagnose-tool"
 import { Services } from "@/components/services"
@@ -27,6 +28,7 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
+        <ShowcaseCarousel />
         <Problem />
         <DiagnoseTool />
         <Services />
