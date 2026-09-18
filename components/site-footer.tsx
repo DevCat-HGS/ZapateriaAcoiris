@@ -44,18 +44,8 @@ export function SiteFooter() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
               Navegación
             </h3>
-            <ul className="mt-4 space-y-2.5">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-              {footerExtraLinks.map((link) => (
+            <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5">
+              {[...navLinks, ...footerExtraLinks].map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}

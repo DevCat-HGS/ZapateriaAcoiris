@@ -1,7 +1,7 @@
 import { ArrowRight, ChevronDown, ShieldCheck, Sparkles } from "lucide-react"
-import { business } from "@/lib/site"
 import { WhatsAppButton } from "./whatsapp-button"
 import { HeroVisual } from "./hero-visual"
+import { Counter } from "./counter"
 import { Reveal } from "./reveal"
 
 export function Hero() {
@@ -14,11 +14,6 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex max-w-2xl flex-col">
-          <Reveal as="span" variant="zoom" className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-accent-foreground">
-            <Sparkles className="size-3.5" />
-            {business.experienceYears} en Medellín
-          </Reveal>
-
           <Reveal as="h1" delay={80} className="text-balance font-serif font-semibold tracking-tight text-primary-foreground">
             <span className="block text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
               Damos nueva vida a tus <span className="text-shimmer">favoritos.</span>
@@ -68,6 +63,17 @@ export function Hero() {
         </div>
       </div>
 
+      <div className="absolute right-4 top-28 z-10 flex items-center gap-3 rounded-2xl border border-border/60 bg-card/95 px-5 py-4 shadow-lg backdrop-blur-sm sm:right-6 lg:right-10 lg:top-36">
+        <span className="font-serif text-3xl font-semibold text-primary">
+          <Counter to={40} />
+        </span>
+        <span className="text-sm font-medium leading-tight text-muted-foreground">
+          años transformando
+          <br />
+          vida a tus artículos
+        </span>
+      </div>
+
       <a
         href="/#problema"
         aria-label="Desplázate para ver más"
@@ -81,4 +87,3 @@ export function Hero() {
     </section>
   )
 }
-

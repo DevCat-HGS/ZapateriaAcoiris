@@ -7,6 +7,7 @@ import { Reveal } from "./reveal"
 import { ServiceComparisonCard, type ServiceComparisonImage } from "./service-comparison-card"
 import { TiltCard } from "./tilt-card"
 import { WhatsAppIcon } from "./whatsapp-icon"
+import { WhatsAppButton } from "./whatsapp-button"
 import { ArrowRight } from "lucide-react"
 
 const segmentedServices = serviceSegments.map((service) => {
@@ -56,7 +57,7 @@ export function Services() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {service.description}
                   </p>
-                  <div className="mt-5 flex flex-col gap-2">
+                  <div className="mt-5 flex flex-col items-start gap-3">
                     {service.href && (
                       <a
                         href={service.href}
@@ -66,15 +67,9 @@ export function Services() {
                         <ArrowRight className="size-4" />
                       </a>
                     )}
-                    <a
-                      href={whatsappLink("general")}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-accent-foreground"
-                    >
-                      <WhatsAppIcon className="size-4 text-whatsapp" />
+                    <WhatsAppButton context="general" size="sm">
                       Consultar por WhatsApp
-                    </a>
+                    </WhatsAppButton>
                   </div>
                 </div>
               </TiltCard>

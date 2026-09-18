@@ -9,6 +9,7 @@ import {
   Clock,
   Layers,
   ListChecks,
+  MousePointerClick,
 } from "lucide-react"
 import { diagnosisCategories, diagnosisSolutions } from "@/lib/diagnosis"
 import { SectionHeading } from "./section-heading"
@@ -87,12 +88,16 @@ export function DiagnoseTool() {
                         setCategoryId(cat.id)
                         setStep(2)
                       }}
-                      className="flex w-full items-center gap-3 rounded-2xl border border-border/70 bg-background p-5 text-left transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-md"
+                      className="group flex w-full cursor-pointer items-center gap-3 rounded-2xl border border-border/70 bg-background p-5 text-left transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:bg-accent/10 hover:shadow-md"
                     >
                       <span className="text-3xl">{cat.emoji}</span>
-                      <span className="font-serif text-lg font-semibold text-primary">
+                      <span className="flex-1 font-serif text-lg font-semibold text-primary">
                         {cat.label}
                       </span>
+                      <MousePointerClick
+                        aria-hidden="true"
+                        className="size-5 shrink-0 text-accent-foreground/70 transition-transform group-hover:scale-110"
+                      />
                     </button>
                   </Reveal>
                 ))}
@@ -114,7 +119,7 @@ export function DiagnoseTool() {
                       setProblemId(problem.id)
                       setStep(3)
                     }}
-                    className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:text-primary"
+                    className="cursor-pointer rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 transition-all hover:-translate-y-0.5 hover:scale-105 hover:border-accent/60 hover:bg-accent/15 hover:text-primary"
                   >
                     {problem.label}
                   </button>

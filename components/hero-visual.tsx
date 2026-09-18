@@ -2,25 +2,39 @@
 
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
-import { Counter } from "./counter"
-import { HeroBeforeAfter } from "./hero-before-after"
+import { galleryItems } from "@/lib/site"
+
+const afterImages = Array.from(new Set(galleryItems.map((item) => item.image)))
+const SLIDE_MS = 1000
 
 export function HeroVisual() {
+  const [phase, setPhase] = useState<"video" | "slides">("video")
+  const [slide, setSlide] = useState(0)
   const [showVideo, setShowVideo] = useState(false)
-  const videoRef = useRef<HTMLVideoElement>(null)
   const [pointer, setPointer] = useState({ x: 0.5, y: 0.35 })
   const reducedMotionRef = useRef(false)
 
   useEffect(() => {
     reducedMotionRef.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    setShowVideo(!reducedMotionRef.current)
-    if (reducedMotionRef.current) return
+    if (reducedMotionRef.current) {
+      setPhase("slides")
+      return
+    }
+    setShowVideo(true)
     const onMove = (e: PointerEvent) => {
       setPointer({ x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight })
     }
     window.addEventListener("pointermove", onMove)
     return () => window.removeEventListener("pointermove", onMove)
   }, [])
+
+  useEffect(() => {
+    if (phase !== "slides" || afterImages.length <= 1 || reducedMotionRef.current) return
+    const timer = window.setInterval(() => {
+      setSlide((current) => (current + 1) % afterImages.length)
+    }, SLIDE_MS)
+    return () => window.clearInterval(timer)
+  }, [phase])
 
   const parallax = (strength: number) => {
     if (reducedMotionRef.current) return undefined
@@ -29,36 +43,52 @@ export function HeroVisual() {
     return { transform: `translate(${x}px, ${y}px)` }
   }
 
+  function startSlides() {
+    setShowVideo(false)
+    setPhase("slides")
+  }
+
+  const current = afterImages[slide] ?? "/content/17-despues.jpg"
+  const next = afterImages[(slide + 1) % afterImages.length] ?? current
+
   return (
     <>
       <div className="absolute inset-0 -z-20">
-        {showVideo ? (
+        {showVideo && phase === "video" ? (
           <video
-            ref={videoRef}
             className="size-full object-cover"
             autoPlay
             muted
-            loop
             playsInline
             preload="metadata"
-            poster="/content/17-despues.jpg"
-            // Solo recae en la imagen si falla el propio video: un <source> roto
-            // dispara error en el hijo y apagaría el video aunque sí se pueda reproducir.
+            poster={current}
+            onEnded={startSlides}
             onError={(event) => {
-              if (event.target === event.currentTarget) setShowVideo(false)
+              if (event.target === event.currentTarget) startSlides()
             }}
           >
             <source src="/videos/hero.mp4" type="video/mp4" />
           </video>
         ) : (
-          <Image
-            src="/content/17-despues.jpg"
-            alt="Resultado de un cambio de capellada realizado en Arcoiris"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
+          <>
+            <Image
+              src={current}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+            {next !== current && (
+              <Image
+                src={next}
+                alt=""
+                fill
+                sizes="100vw"
+                className="pointer-events-none object-cover opacity-0"
+              />
+            )}
+          </>
         )}
       </div>
 
@@ -79,20 +109,6 @@ export function HeroVisual() {
       <div style={parallax(-12)} aria-hidden="true" className="pointer-events-none absolute -left-16 bottom-10 -z-10 size-64">
         <div className="animate-blob-delay size-full rounded-full bg-accent/10 blur-3xl" />
       </div>
-
-      <div className="animate-gentle-float absolute right-4 top-28 z-10 flex items-center gap-3 rounded-2xl border border-border/60 bg-card/95 px-5 py-4 shadow-lg backdrop-blur-sm sm:right-6 lg:right-10 lg:top-36">
-        <span className="font-serif text-3xl font-semibold text-primary">
-          <Counter to={40} />
-        </span>
-        <span className="text-sm font-medium leading-tight text-muted-foreground">
-          años transformando
-          <br />
-          vida a tus artículos
-        </span>
-      </div>
-
-      <HeroBeforeAfter />
     </>
   )
 }
-

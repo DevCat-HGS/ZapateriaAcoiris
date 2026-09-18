@@ -21,14 +21,17 @@ export function Problem() {
           description="Selecciona el caso que más se parezca al tuyo y descubre cómo lo resolvemos."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {articleNeeds.map((need, i) => {
             const isOpen = openId === need.id
             return (
               <Reveal
                 key={need.id}
                 delay={i * 70}
-                className="overflow-hidden rounded-2xl border border-border/70 bg-card transition-colors hover:border-accent/50"
+                className={cn(
+                  "self-start overflow-hidden rounded-2xl border bg-card transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-accent hover:bg-accent/10 hover:shadow-lg",
+                  isOpen ? "border-accent/70 shadow-md" : "border-border/70",
+                )}
               >
                 <ComparisonSlider
                   before={need.before}
@@ -42,7 +45,7 @@ export function Problem() {
                   type="button"
                   onClick={() => setOpenId(isOpen ? null : need.id)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-3 p-5 text-left"
+                  className="flex w-full cursor-pointer items-center justify-between gap-3 p-5 text-left"
                 >
                   <h3 className="font-serif text-lg font-semibold text-primary">
                     {need.title}
